@@ -5,6 +5,12 @@ body {
 	font-weight: 400;
 }
 
+a, a:visited, a:hover, a:active {
+	color: white;
+	text-decoration: none;
+	outline: none;
+}
+
 .wrap {
 	/*border: 2px dotted green;*/
 	width: 96%;
@@ -51,10 +57,18 @@ body {
 	font-size: 1.25em;
 }
 
+.link:hover {
+	text-shadow: 2px 2px 8px #f1aae4;
+}
+
 .white {
 	background-color: white;
 	padding: 9px;
 	border-radius: 25px;
+}
+
+.white:hover {
+	box-shadow: 0px 0px 10px #f1aae4;
 }
 
 img {
