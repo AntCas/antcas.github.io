@@ -1,42 +1,84 @@
 body {
 	background-color: black;
+	color: white;
+	font-family: Roboto;
+	font-weight: 400;
 }
 
-.outline {
-	position: absolute;
-	left: 2.5em;
-	right: 2.5em;
-	top: 2.5em;
-	bottom: 2.5em;
+.wrap {
+	/*border: 2px dotted green;*/
+	width: 96%;
+	padding: 2.5em;
+	background-color: black;
+}
+
+#title-wrap {
+	height: 500px;
+}
+
+#links-wrap {
+	height: 150px;
+}
+
+#one {
+	background-color: black;
+	display: block;
+	height: 100%;
+	width: 100%;
 	border: 1px solid white;
 }
 
-.centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -75%);
-}
-
 #title-box {
-	font-family: 'Roboto', sans-serif;
-	display: inline-block;	
-	margin: auto;
-	color: white;
-}
-
-#my-name {
-	font-size: 7em;
+	margin-left, margin-right: auto;
+	margin-top: 160px;
+	text-align: center;
+	font-size: 100px;
 	font-weight: 100;
 }
 
-#my-name:hover {
+#title-box:hover {
 	text-shadow: 1px 1px 8px #f8d6f2;
 }
 
-#my-skill {
-	font-size: 4em;
+#two {
+	margin-top: 25px;
+	width: 100%;
+	text-align: center;
+}
+
+.link {
+	display: inline-block;
+	font-size: 1.25em;
+}
+
+.white {
+	background-color: white;
+	padding: 9px;
+	border-radius: 25px;
+}
+
+img {
+	height: 100px;
+	width: 100px;
+}
+
+.spacer {
+	display: inline-block;
+	width: 20%;
+}
+
+#three {
+	padding: 50px 80px 20px 80px;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.heavy {
 	font-weight: 400;
-	margin-left: 63%;
-	margin-bottom: 50px;
+}
+
+#footer {
+	text-align: center;
+	font-weight: 100;
+	padding-top: 45px;
 }
