@@ -41,7 +41,7 @@ body {
 }
 
 #two {
-	margin-top: 25px;
+	margin-top: 55px;
 	width: 100%;
 	text-align: center;
 }
@@ -68,10 +68,12 @@ img {
 }
 
 #three {
+	margin-top: 60px;
 	padding: 50px 80px 20px 80px;
 	font-size: 2em;
 	font-weight: 300;
 }
+
 
 .heavy {
 	font-weight: 400;
