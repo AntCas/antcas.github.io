@@ -1,0 +1,15 @@
+# Site settings
+title: 
+email: acastrio@umd.edu
+description: > # this means to ignore newlines until "baseurl:"
+  A college education has become prohibitively expensive in
+  the United States. While our students deal with high college
+  educations costs, the cost of college in other countries is
+  much more affordable.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://castrio.me/education" # the base hostname & protocol for your site
+twitter_username: honey_nut_castrios
+github_username: AntCas
+
+# Build settings
+markdown: kramdown
