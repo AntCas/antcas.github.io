@@ -2,6 +2,9 @@ h1, h2 {
 	text-align: center;
 	font-weight: bold;
 }
+h3 {
+	font-weight: bold;
+}
 section {
 	margin-bottom: $spacing-unit;
 }
@@ -27,6 +30,12 @@ hr.style-eight:after {
 }
 section > p {
 	text-indent: 3em;
+}
+strong {
+	font-weight: bold;
+}
+img {
+	width: 100%;
 }
 #umd-image {
 	width: 100%;
