@@ -1,7 +1,12 @@
 form {
     /* Just to center the form on the page */
     margin: $spacing-unit auto;
-    width: 600px;
+    width: 650px;
+	@include media-query($on-palm) {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+	}
     /* To see the outline of the form */
     padding: 1em;
     border: 1px solid #CCC;
@@ -15,8 +20,11 @@ form div + div {
 label {
     /* To make sure that all labels have the same size and are properly aligned */
     display: inline-block;
-    width: 90px;
+    width: 105px;
     text-align: right;
+	@include media-query($on-palm) {
+		text-align: left;
+	}
 }
 
 input, textarea {
@@ -29,6 +37,9 @@ input, textarea {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
+	@include media-query($on-palm) {
+		width: 100%;
+	}
     /* To harmonize the look & feel of text field border */
     border: 1px solid #999;
 }
@@ -54,7 +65,14 @@ textarea {
 
 .button {
     /* To position the buttons to the same position of the text fields */
-    padding-left: 90px; /* same size as the label elements */
+    padding-left: 105px; /* same size as the label elements */
+
+	@include media-query($on-palm) {
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
 }
 button {
     /* This extra margin represent roughly the same space as the space
