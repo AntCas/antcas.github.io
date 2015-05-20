@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
     var result = JSON.parse(xmlhttp.responseText);
     var last_name = result.results[0].last_name;
     var name = result.results[0].first_name + " " + last_name;
-    email_form.name = name;
+    email_form.rep_name = name;
     var email = result.results[0].oc_email;
     email_form.email=email;
     var message = "The Honorable " + name + "\nU.S. House of Representatives\n" + "Washington, D.C. 20515\n\n" + "Dear Representative " + last_name + ",\n\n" + "The legislation addressing (describe issue concisely, or use exact name of bill before legislature) is of paramount interest to me because I am a (Certified Academic Language Therapist, parent, teacher, etc.) This issue directly impacts (my students, my profession, the way we as professionals will be able to function effectively, my child, etc.)\n\n" + "I am primarily concerned about (describe major specific concern within the larger issue) because (state reasons or examples briefly, with only as many relevant details as necessary to make your point clearly.) Other aspects of this same issue that affect (my student, profession, child) are (describe briefly any secondary concerns and supporting situations, reasons, examples, etc.)\n\n" + "Although I have read reports of your position in the newspapers, I realize this may not fully represent your viewpoint. Therefore, I will look forward to your reply expressing your opinions, and your current stance on the issue.\n\n" + "Thank you for your consideration of my viewpoint on this matter. I believe it is an important issue, and would like to see the legislation (pass, fail, or be amended) to ensure effective educational services for the students involved.\n\n" + "Sincerely,\n";
@@ -49,6 +49,7 @@ window.addEventListener("load", function () {
       }
    }).done(function(response) {
      console.log(response); // if you're into that sorta thing
+     alert("Thank You!\n\nAn Email was sent to " + email_form.rep_name + ".");
    });
   }
   /* Find Representative Form */
