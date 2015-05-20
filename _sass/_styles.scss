@@ -4,16 +4,22 @@ h1, h2 {
 }
 h3 {
 	font-weight: bold;
+	margin-top: $spacing-unit;
 }
 section {
 	margin-bottom: $spacing-unit;
+}
+#introduction > h2 {
+	margin-top: $spacing-unit;
 }
 hr {
 	width: 50%;	
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: $spacing-unit;
 }
 hr.style-eight { 
+	margin-top: $spacing-unit * 1;
 	padding: 0; 
 	border: none; 
 	border-top: medium double #333; 
@@ -36,6 +42,7 @@ strong {
 }
 img {
 	width: 100%;
+	margin-top: $spacing-unit;
 }
 #umd-image {
 	width: 100%;
