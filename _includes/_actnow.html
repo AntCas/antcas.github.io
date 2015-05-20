@@ -1,13 +1,37 @@
 <!-- Act Now -->
 <section id="actnow">
     <h2>Act Now</h2>
+	<form id="findzip" method="post">
+		<div>	
+			<label for="zip">Zipcode:</label>
+			<input type="text" id="zipcode" name="user_zip" class="zip" />
+		</div>
+		<div class="button">
+			<button type="submit">Find Your Representative</button>
+		</div>
+	</form>
+	<form id="actnowform" method="post">
+		<div>
+			<label for="msg">Message:</label>
+			<textarea id="msg" name="user_message" class="message"></textarea>
+		</div>
+		<div>
+			<label for="name">Sign Here:</label>
+			<input type="text" id="name" name="user_name" class="name" />
+		</div>
+		<div>
+			<label for="mail">Your Email:</label>
+			<input type="email" id="mail" name="user_email" class="email"/>
+		</div>
+		<div>
+			<label for="address">Your Address:</label>
+			<input type="address" id="address" name="user_address" class="address"/>
+		</div>
 
-    <form>
-        <input type="textarea">
-        <br />
-        <input type="submit" value="Submit">
-    </form>
-
+		<div class="button">
+			<button type="submit">Send Your Message</button>
+		</div>
+	</form>
 
 </section>
 <!-- /Act Now -->
