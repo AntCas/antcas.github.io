@@ -1,0 +1,22 @@
+.header {
+  background: #f5f5f5;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.header .header-subcontainer {
+  margin: 0 auto;
+  max-width: 980;
+  padding: 1.45rem 1.0875rem;
+}
+
+.header .header-subcontainer h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.header .header-subcontainer h1 a {
+  color: black;
+  text-decoration: none;
+}
