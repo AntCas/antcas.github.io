@@ -6,36 +6,57 @@ $border: 16px;
 $border-width: 1px;
 $transition-time: 150ms;
 
-$card-width-small: 200px;
-$card-height-small: 100px;
-
 .index-page {
-  margin-top: 24px;
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  margin-top: 24px;
   width: 100%;
+
+  .posts {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    a {
+      max-width: 100%;
+    }
+  }
 
   .blog-post-preview {
     position: relative;
     display: inline-flex;
     flex-direction: column;
-    height: $card-height;
-    width: $card-width;
-    margin: 25px;
     border-radius: 4px;
     background: pink;
+    height: $card-height;
+    width: $card-width;
+    max-width: 80%;
+    margin: 25px auto;
+
+    @include breakpoint(xs) {
+      margin: 25px;
+      max-width: 100%;
+    }
 
    .preview-image {
-      width: 100%;
+      max-width: 100%;
       margin: auto;
       background: white;
     }
   }
 
   .border-lines {
+    display: none;
+
+    @include breakpoint(xs) {
+      display: block;
+    }
+
     position: absolute;
     top: ($border / 2 * -1) - $border-width; 
     left: $border / 2 * -1 - $border-width;
@@ -48,16 +69,16 @@ $card-height-small: 100px;
     .side-c, .side-d {
       width: $card-height;
     }
-    .side-b, .side-d {
-      .inner {
-        transition-delay: $transition-time * 1;
-      }
-    }
     .side-a, .side-b, .side-c, .side-d {
       .inner {
         width: 0px;
         height: 2px;
         transition: all $transition-time ease-in;
+      }
+    }
+    .side-b, .side-d {
+      .inner {
+        transition-delay: $transition-time;
       }
     }
     .side-a {

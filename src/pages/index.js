@@ -11,6 +11,7 @@ export default function Index({ data }) {
 
   return (
     <div className="index-page">
+      <div className="posts">
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
@@ -46,6 +47,7 @@ export default function Index({ data }) {
             </Link>
           );
         })}
+      </div>
     </div>
   );
 }
