@@ -1,3 +1,12 @@
+.blog-posts {
+  margin-top: 24px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 div.blog-post-preview {
   display: inline-block;
   height: 200px;
