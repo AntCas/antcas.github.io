@@ -18,9 +18,10 @@
   text-align: center;
 }
 
-.header .header-subcontainer h1 a {
+.header .header-subcontainer a {
   color: black;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .header .header-subcontainer .links {

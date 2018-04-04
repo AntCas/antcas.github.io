@@ -23,11 +23,11 @@ const data = [
 
 const links = data.map((item, idx) => (
   <li className="item-link" key={ idx }>
-    <Link to={ item.url }>
+    <a href={ item.url }>
       <ReactSVG
         path={ `${routes.ICON}/${item.img}` }
         className="item-image" />
-    </Link>
+    </a>
   </li>
 ));
 

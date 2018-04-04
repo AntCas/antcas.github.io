@@ -5,7 +5,7 @@ import Media from 'react-media'
 
 import Header from '../components/Header'
 import './reset.css'
-import './index.css'
+import './index.scss'
 
 export default class TemplateWrapper extends React.Component {
   render() {
