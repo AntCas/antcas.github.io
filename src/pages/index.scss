@@ -2,6 +2,7 @@ $card-width: 400px;
 $card-height: 200px;
 $border: 16px;
 $border-width: 1px;
+$transition-time: 150ms;
 
 .index-page {
   margin-top: 24px;
@@ -56,7 +57,7 @@ $border-width: 1px;
       height: $border-width;
       .inner {
         width: 0px;
-        transition: all 300ms ease-in;
+        transition: all $transition-time ease-in;
       }
     }
     .side-a {
@@ -64,12 +65,21 @@ $border-width: 1px;
     }
     .side-b {
       transform: translate(($border / 2), ($card-height + $border)) rotate(180deg);
+      .inner {
+        transition-delay: $transition-time * 1;
+      }
     }
     .side-c {
       transform: translate(-$card-height / 2 + 2, ($card-height / 2 + $border / 2)) rotate(-90deg);
+      .inner {
+        transition-delay: $transition-time * 0;
+      }
     }
     .side-d {
       transform: translate($card-width - ($card-height / 2) + ($border), ($card-height / 2 + $border / 2)) rotate(90deg);
+      .inner {
+        transition-delay: $transition-time * 1;
+      }
     }
 
     &:hover {
@@ -86,6 +96,5 @@ $border-width: 1px;
         }
       }
     }
-
   }
 }
