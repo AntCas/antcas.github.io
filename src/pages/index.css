@@ -8,15 +8,22 @@
   width: 100%;
 }
 div.blog-post-preview {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
   height: 200px;
   width: 400px;
   margin: 25px;
+  border-radius: 4px;
   background: pink;
   transition: all 100ms ease-in-out;
 }
 div.blog-post-preview:hover {
   transform: translateY(-5px);
+}
+.blog-post-preview img.preview-image {
+  width: 100%;
+  margin: auto;
+  background: white;
 }
 h1 > * {
     font-size: 1.2rem;
