@@ -1,8 +1,8 @@
 ---
 path: "/redfin"
-date: "2016"
+date: "2017-07-12T17:12:33.962Z"
 title: "Redfin"
-image: "redfin.png"
+image: "redfin.svg"
 color: "#c8352b"
 ---
 Oooooh-weeee, my first blog post!

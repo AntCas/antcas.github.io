@@ -1,8 +1,9 @@
 ---
 path: "/contigou"
-date: "2017-07-12T17:12:33.962Z"
+date: "2018"
 title: "ContigoU"
-color: "blue"
+image: "contigou.svg"
+color: "#e2f2f5"
 ---
 
 Freelance project with ContigoU
