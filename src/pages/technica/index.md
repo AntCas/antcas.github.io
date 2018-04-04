@@ -1,9 +1,9 @@
 ---
-path: "/redfin"
-date: "2017-07-12T17:12:33.962Z"
-title: "Redfin"
-image: "redfin.svg"
-color: "black"
+path: "/technica"
+date: "2015"
+title: "Technica"
+image: "technica.gif"
+color: "#111111"
 ---
 Oooooh-weeee, my first blog post!
 First post Ipsum is a major key to success. Congratulations, you played yourself. Surround yourself with angels. Celebrate success right, the only way, apple. 

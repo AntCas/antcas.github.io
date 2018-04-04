@@ -15,9 +15,11 @@ export default function Index({ data }) {
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
+          const { color, border} = post.frontmatter; 
+          const innerColor = border? border: color;
           const inner = (
             <div className="inner"
-              style={{ background: post.frontmatter.color }} />
+              style={{ background: innerColor }} />
           );
           return (
             <Link to={post.frontmatter.path} key={post.id}>
@@ -63,6 +65,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             image
+            border
             color
           }
         }
