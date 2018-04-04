@@ -14,6 +14,10 @@ export default function Index({ data }) {
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
+          const inner = (
+            <div className="inner"
+              style={{ background: post.frontmatter.color }} />
+          );
           return (
             <Link to={post.frontmatter.path} key={post.id}>
               <div className="blog-post-preview"
@@ -26,16 +30,16 @@ export default function Index({ data }) {
                 <p>{post.excerpt}</p> */ }
                 <div className="border-lines">
                   <div className="side-a">
-                    <div className="inner" />
+                    { inner }
                   </div>
                   <div className="side-b">
-                    <div className="inner" />
+                    { inner }
                   </div>
                   <div className="side-c">
-                    <div className="inner" />
+                    { inner }
                   </div>
                   <div className="side-d">
-                    <div className="inner" />
+                    { inner }
                   </div>
                 </div>
               </div>

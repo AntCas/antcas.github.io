@@ -1,8 +1,13 @@
+@import '../common/breakpoints.scss';
+
 $card-width: 400px;
 $card-height: 200px;
 $border: 16px;
 $border-width: 1px;
 $transition-time: 150ms;
+
+$card-width-small: 200px;
+$card-height-small: 100px;
 
 .index-page {
   margin-top: 24px;
@@ -23,10 +28,6 @@ $transition-time: 150ms;
     border-radius: 4px;
     background: pink;
 
-//    &:hover {
-//      transform: translateY(-5px);
-//    }
-
    .preview-image {
       width: 100%;
       margin: auto;
@@ -43,58 +44,49 @@ $transition-time: 150ms;
 
     .side-a, .side-b {
       width: $card-width; 
-      .inner {
-        height: 2px;
-      }
     }
     .side-c, .side-d {
       width: $card-height;
+    }
+    .side-b, .side-d {
       .inner {
-        height: 1px;
+        transition-delay: $transition-time * 1;
       }
     }
     .side-a, .side-b, .side-c, .side-d {
-      height: $border-width;
       .inner {
         width: 0px;
+        height: 2px;
         transition: all $transition-time ease-in;
       }
     }
     .side-a {
-      transform: translateX($border / 2);
+      transform: translate($border / 2, 1px);
     }
     .side-b {
-      transform: translate(($border / 2), ($card-height + $border)) rotate(180deg);
-      .inner {
-        transition-delay: $transition-time * 1;
-      }
+      transform: translate(($border / 2), ($card-height + $border) - 3px) rotate(180deg);
     }
     .side-c {
-      transform: translate(-$card-height / 2 + 2, ($card-height / 2 + $border / 2)) rotate(-90deg);
-      .inner {
-        transition-delay: $transition-time * 0;
-      }
+      transform: translate(-$card-height / 2 + 2, ($card-height / 2 + $border / 4)) rotate(-90deg);
     }
     .side-d {
-      transform: translate($card-width - ($card-height / 2) + ($border), ($card-height / 2 + $border / 2)) rotate(90deg);
-      .inner {
-        transition-delay: $transition-time * 1;
-      }
+      transform: translate($card-width - ($card-height / 2) + ($border), ($card-height / 2 + $border / 4)) rotate(90deg);
     }
 
     &:hover {
       .side-a, .side-b {
         .inner {
           width: $card-width; 
-          background: red;
+          background: pink;
         }
       }
       .side-c, .side-d {
         .inner {
           width: $card-height;
-          background: red;
+          background: pink;
         }
       }
     }
+
   }
 }
