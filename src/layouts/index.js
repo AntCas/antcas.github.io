@@ -12,10 +12,10 @@ export default class TemplateWrapper extends React.Component {
     return (
       <div>
         <Helmet
-          title="Gatsby Default Starter"
+          title="Anthony Castrio's Website"
           meta={[
-            { name: "description", content: "Sample" },
-            { name: "keywords", content: "sample, something" }
+            { name: "description", content: "Anthony Castrio - Product Manager and Software Engineer" },
+            { name: "keywords", content: "software engineering, software, websites, product management, portfolio, product" }
           ]}
         />
         <Header />
