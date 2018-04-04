@@ -1,0 +1,30 @@
+.index-page {
+  margin-top: 24px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .blog-post-preview {
+    display: inline-flex;
+    flex-direction: column;
+    height: 200px;
+    width: 400px;
+    margin: 25px;
+    border-radius: 4px;
+    background: pink;
+    transition: all 100ms ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+   .preview-image {
+      width: 100%;
+      margin: auto;
+      background: white;
+    }
+  }
+}
