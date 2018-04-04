@@ -1,7 +1,7 @@
 ---
-path: "/another-one"
+path: "/redfin"
 date: "2017-07-12T17:12:33.962Z"
-title: "My First Gatsby Post"
+title: "Redfin"
 ---
 Oooooh-weeee, my first blog post!
 First post Ipsum is a major key to success. Congratulations, you played yourself. Surround yourself with angels. Celebrate success right, the only way, apple. 

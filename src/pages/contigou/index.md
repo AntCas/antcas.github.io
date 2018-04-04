@@ -1,7 +1,7 @@
 ---
-path: "/another-two"
+path: "/contigou"
 date: "2017-07-12T17:12:33.962Z"
-title: "My First Gatsby Post"
+title: "ContigoU"
 ---
 
-This is a new and very different file.
+Freelance project with ContigoU
