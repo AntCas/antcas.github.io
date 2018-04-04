@@ -14,7 +14,8 @@
     "gatsby-transformer-remark": "^1.7.39",
     "npm": "^5.8.0",
     "react-helmet": "^5.2.0",
-    "react-media": "^1.8.0"
+    "react-media": "^1.8.0",
+    "react-svg": "^2.2.15"
   },
   "keywords": [
     "gatsby"

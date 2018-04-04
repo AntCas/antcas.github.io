@@ -1,0 +1,1 @@
+exports.ICON = '/static/icon';
