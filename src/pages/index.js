@@ -24,6 +24,20 @@ export default function Index({ data }) {
                 <h1>{post.frontmatter.title}</h1>
                 <h2>{post.frontmatter.date}</h2>
                 <p>{post.excerpt}</p> */ }
+                <div className="border-lines">
+                  <div className="side-a">
+                    <div className="inner" />
+                  </div>
+                  <div className="side-b">
+                    <div className="inner" />
+                  </div>
+                  <div className="side-c">
+                    <div className="inner" />
+                  </div>
+                  <div className="side-d">
+                    <div className="inner" />
+                  </div>
+                </div>
               </div>
             </Link>
           );

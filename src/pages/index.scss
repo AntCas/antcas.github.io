@@ -1,3 +1,8 @@
+$card-width: 400px;
+$card-height: 200px;
+$border: 16px;
+$border-width: 1px;
+
 .index-page {
   margin-top: 24px;
   display: inline-flex;
@@ -8,23 +13,79 @@
   width: 100%;
 
   .blog-post-preview {
+    position: relative;
     display: inline-flex;
     flex-direction: column;
-    height: 200px;
-    width: 400px;
+    height: $card-height;
+    width: $card-width;
     margin: 25px;
     border-radius: 4px;
     background: pink;
-    transition: all 100ms ease-in-out;
 
-    &:hover {
-      transform: translateY(-5px);
-    }
+//    &:hover {
+//      transform: translateY(-5px);
+//    }
 
    .preview-image {
       width: 100%;
       margin: auto;
       background: white;
     }
+  }
+
+  .border-lines {
+    position: absolute;
+    top: ($border / 2 * -1) - $border-width; 
+    left: $border / 2 * -1 - $border-width;
+    height: $card-height + $border;
+    width: $card-width + $border;
+
+    .side-a, .side-b {
+      width: $card-width; 
+      .inner {
+        height: 2px;
+      }
+    }
+    .side-c, .side-d {
+      width: $card-height;
+      .inner {
+        height: 1px;
+      }
+    }
+    .side-a, .side-b, .side-c, .side-d {
+      height: $border-width;
+      .inner {
+        width: 0px;
+        transition: all 300ms ease-in;
+      }
+    }
+    .side-a {
+      transform: translateX($border / 2);
+    }
+    .side-b {
+      transform: translate(($border / 2), ($card-height + $border)) rotate(180deg);
+    }
+    .side-c {
+      transform: translate(-$card-height / 2 + 2, ($card-height / 2 + $border / 2)) rotate(-90deg);
+    }
+    .side-d {
+      transform: translate($card-width - ($card-height / 2) + ($border), ($card-height / 2 + $border / 2)) rotate(90deg);
+    }
+
+    &:hover {
+      .side-a, .side-b {
+        .inner {
+          width: $card-width; 
+          background: red;
+        }
+      }
+      .side-c, .side-d {
+        .inner {
+          width: $card-height;
+          background: red;
+        }
+      }
+    }
+
   }
 }
