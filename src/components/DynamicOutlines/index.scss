@@ -1,18 +1,15 @@
 $element-width: 400px;
 $element-height: 200px;
-$border-gap: 0px;
+$border-gap: 6px;
 $border-width: 4px;
 $transition-time: 150ms;
 
-$border-lines-height: $element-height + $border-gap * 2 + $border-width * 2;
-$border-lines-width: $element-width + $border-gap * 2 + $border-width * 2;
-
 .border-lines {
   position: absolute;
-  top: -($border-gap + $border-width);
-  left: -($border-gap + $border-width);
-  height: $border-lines-height;
-  width: $border-lines-width;
+  top: -($border-gap + $border-width/2);
+  left: -($border-gap + $border-width/2);
+  height: $element-height + $border-gap*2 + $border-width;
+  width: $element-width + $border-gap*2 + $border-width;
 
   .side-a, .side-b, .side-c, .side-d {
     position: absolute;
@@ -28,22 +25,22 @@ $border-lines-width: $element-width + $border-gap * 2 + $border-width * 2;
     transition-delay: $transition-time;
   }
   .side-a {
-    top: -($border-width / 2);
-    left: $border-gap + $border-width;
+    top: -($border-width/2);
+    left: $border-gap + $border-width/2;
   }
   .side-b {
-    bottom: -($border-width / 2);
-    right: $border-gap + $border-width;
+    bottom: -($border-width/2);
+    right: $border-gap + $border-width/2;
     transform: rotate(180deg);
   }
   .side-c {
-    bottom: $border-gap + $border-width;
-    left: -($border-width / 2);
+    bottom: $border-gap + $border-width/2;
+    left: -($border-width/2);
     transform: rotate(180deg);
   }
   .side-d {
-    top: $border-gap + $border-width;
-    right: -($border-width / 2);
+    top: $border-gap + $border-width/2;
+    right: -($border-width/2);
   }
 
   &:hover {

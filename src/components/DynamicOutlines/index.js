@@ -6,62 +6,52 @@ import './index.scss'
 /*
 const styles = {
   position: absolute;
-  top: -($border-gap + $border-width);
-  left: -($border-gap + $border-width);
-  height: $border-lines-height;
-  width: $border-lines-width;
+  top: -($border-gap + $border-width/2);
+  left: -($border-gap + $border-width/2);
+  height: $element-height + $border-gap*2 + $border-width;
+  width: $element-width + $border-gap*2 + $border-width;
 
-  .side-a, .side-b {
-    width: $element-width; 
-  }
-  .side-c, .side-d {
-    width: $element-height;
-  }
   .side-a, .side-b, .side-c, .side-d {
     position: absolute;
-    .inner {
-      width: 0px;
-      height: $border-width;
-      transition: all $transition-time ease-in;
-    }
+    transition: all $transition-time ease-in;
   }
-  .side-b, .side-d {
-    .inner {
-      transition-delay: $transition-time;
-    }
+  .side-a, .side-b {
+    width: 0px;
+    height: $border-width;
+  }
+  .side-c, .side-d {
+    width: $border-width;
+    height: 0px;
+    transition-delay: $transition-time;
   }
   .side-a {
-    top: -($border-width / 2);
-    left: ($border-gap + $border-width);
+    top: -($border-width/2);
+    left: $border-gap + $border-width/2;
   }
   .side-b {
+    bottom: -($border-width/2);
+    right: $border-gap + $border-width/2;
     transform: rotate(180deg);
-    bottom: -($border-width / 2);
-    left: ($border-gap + $border-width);
   }
   .side-c {
-    transform: rotate(-90deg);
-    top: $border-lines-height / 2 - ($border-width / 2);
-    left: -($element-height / 2);
+    bottom: $border-gap + $border-width/2;
+    left: -($border-width/2);
+    transform: rotate(180deg);
   }
   .side-d {
-    transform: rotate(90deg);
-    top: $border-lines-height / 2 - ($border-width / 2);
-    right: -($element-height / 2);
+    top: $border-gap + $border-width/2;
+    right: -($border-width/2);
   }
 
   &:hover {
     .side-a, .side-b {
-      .inner {
-        width: $element-width; 
-      }
+      width: $element-width; 
     }
     .side-c, .side-d {
-      .inner {
-        width: $element-height;
-      }
+      height: $element-height;
     }
   }
+
 }
 */
 class DynamicOutlines extends Component {
