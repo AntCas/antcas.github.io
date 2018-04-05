@@ -30,6 +30,10 @@
   margin-left: auto;
 }
 
+.header .header-subcontainer .links .item-link {
+  position: relative;
+}
+
 .header .header-subcontainer .item-link .item-image {
   height: 32px;
   width: 32px;

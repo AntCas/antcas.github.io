@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import ReactSVG from 'react-svg'
 
+import DynamicOutlines from '../DynamicOutlines';
+
 import routes from '../../constants/routes'
 
 import './index.css'
@@ -28,6 +30,7 @@ const links = data.map((item, idx) => (
         path={ `${routes.ICON}/${item.img}` }
         className="item-image" />
     </a>
+    <DynamicOutlines borderColor={ "#000" } />
   </li>
 ));
 

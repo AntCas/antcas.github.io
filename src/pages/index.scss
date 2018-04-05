@@ -2,9 +2,6 @@
 
 $card-width: 400px;
 $card-height: 200px;
-$border: 16px;
-$border-width: 1px;
-$transition-time: 150ms;
 
 .index-page {
   display: flex;
@@ -55,58 +52,5 @@ $transition-time: 150ms;
     @include breakpoint(xs) {
       display: block;
     }
-
-    position: absolute;
-    top: ($border / 2 * -1) - $border-width; 
-    left: $border / 2 * -1 - $border-width;
-    height: $card-height + $border;
-    width: $card-width + $border;
-
-    .side-a, .side-b {
-      width: $card-width; 
-    }
-    .side-c, .side-d {
-      width: $card-height;
-    }
-    .side-a, .side-b, .side-c, .side-d {
-      .inner {
-        width: 0px;
-        height: 2px;
-        transition: all $transition-time ease-in;
-      }
-    }
-    .side-b, .side-d {
-      .inner {
-        transition-delay: $transition-time;
-      }
-    }
-    .side-a {
-      transform: translate($border / 2, 1px);
-    }
-    .side-b {
-      transform: translate(($border / 2), ($card-height + $border) - 3px) rotate(180deg);
-    }
-    .side-c {
-      transform: translate(-$card-height / 2 + 2, ($card-height / 2 + $border / 4)) rotate(-90deg);
-    }
-    .side-d {
-      transform: translate($card-width - ($card-height / 2) + ($border), ($card-height / 2 + $border / 4)) rotate(90deg);
-    }
-
-    &:hover {
-      .side-a, .side-b {
-        .inner {
-          width: $card-width; 
-          background: pink;
-        }
-      }
-      .side-c, .side-d {
-        .inner {
-          width: $card-height;
-          background: pink;
-        }
-      }
-    }
-
   }
 }

@@ -1,0 +1,69 @@
+$card-width: 400px;
+$card-height: 200px;
+$border: 5px;
+$border-width: 4px;
+$transition-time: 150ms;
+
+$border-lines-height: $card-height + $border * 2 + $border-width * 2;
+$border-lines-width: $card-width + $border * 2 + $border-width * 2;
+
+.border-lines {
+  position: absolute;
+  top: -($border + $border-width);
+  left: -($border + $border-width);
+  height: $border-lines-height;
+  width: $border-lines-width;
+
+  .side-a, .side-b {
+    width: $card-width; 
+  }
+  .side-c, .side-d {
+    width: $card-height;
+  }
+  .side-a, .side-b, .side-c, .side-d {
+    position: absolute;
+    .inner {
+      width: 0px;
+      height: $border-width;
+      transition: all $transition-time ease-in;
+    }
+  }
+  .side-b, .side-d {
+    .inner {
+      transition-delay: $transition-time;
+    }
+  }
+  .side-a {
+    top: -($border-width / 2);
+    left: ($border + $border-width);
+  }
+  .side-b {
+    transform: rotate(180deg);
+    bottom: -($border-width / 2);
+    left: ($border + $border-width);
+  }
+  .side-c {
+    transform: rotate(-90deg);
+    top: $border-lines-height / 2 - ($border-width / 2);
+    left: -($card-height / 2);
+  }
+  .side-d {
+    transform: rotate(90deg);
+    top: $border-lines-height / 2 - ($border-width / 2);
+    right: -($card-height / 2);
+  }
+
+  &:hover {
+    .side-a, .side-b {
+      .inner {
+        width: $card-width; 
+      }
+    }
+    .side-c, .side-d {
+      .inner {
+        width: $card-height;
+      }
+    }
+  }
+}
+
