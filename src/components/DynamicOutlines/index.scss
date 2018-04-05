@@ -1,11 +1,11 @@
-$card-width: 400px;
-$card-height: 200px;
+$element-width: 400px;
+$element-height: 200px;
 $border-gap: 5px;
 $border-width: 4px;
 $transition-time: 150ms;
 
-$border-lines-height: $card-height + $border-gap * 2 + $border-width * 2;
-$border-lines-width: $card-width + $border-gap * 2 + $border-width * 2;
+$border-lines-height: $element-height + $border-gap * 2 + $border-width * 2;
+$border-lines-width: $element-width + $border-gap * 2 + $border-width * 2;
 
 .border-lines {
   position: absolute;
@@ -15,10 +15,10 @@ $border-lines-width: $card-width + $border-gap * 2 + $border-width * 2;
   width: $border-lines-width;
 
   .side-a, .side-b {
-    width: $card-width; 
+    width: $element-width; 
   }
   .side-c, .side-d {
-    width: $card-height;
+    width: $element-height;
   }
   .side-a, .side-b, .side-c, .side-d {
     position: absolute;
@@ -45,23 +45,23 @@ $border-lines-width: $card-width + $border-gap * 2 + $border-width * 2;
   .side-c {
     transform: rotate(-90deg);
     top: $border-lines-height / 2 - ($border-width / 2);
-    left: -($card-height / 2);
+    left: -($element-height / 2);
   }
   .side-d {
     transform: rotate(90deg);
     top: $border-lines-height / 2 - ($border-width / 2);
-    right: -($card-height / 2);
+    right: -($element-height / 2);
   }
 
   &:hover {
     .side-a, .side-b {
       .inner {
-        width: $card-width; 
+        width: $element-width; 
       }
     }
     .side-c, .side-d {
       .inner {
-        width: $card-height;
+        width: $element-height;
       }
     }
   }
