@@ -30,7 +30,6 @@ const links = data.map((item, idx) => (
         path={ `${routes.ICON}/${item.img}` }
         className="item-image" />
     </a>
-    <DynamicOutlines borderColor={ "#000" } />
   </li>
 ));
 
