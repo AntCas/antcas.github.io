@@ -9,4 +9,8 @@ html, body {
   background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(170,170,170,1) 58%, rgba(255,255,255,1) 100%);
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(170,170,170,1) 58%, rgba(255,255,255,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+
+  .layout {
+    min-height: 100vh;
+  }
 }
