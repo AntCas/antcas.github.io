@@ -31,9 +31,7 @@ export default function Index({ data }) {
                 <h1>{post.frontmatter.title}</h1>
                 <h2>{post.frontmatter.date}</h2>
                 <p>{post.excerpt}</p> */ }
-                <DynamicOutlines
-                  parentId={ postId }
-                  borderColor={ borderColor }/>
+                <DynamicOutlines borderColor={ borderColor }/>
               </div>
             </Link>
           );
