@@ -6,7 +6,7 @@ import DynamicOutlines from '../DynamicOutlines';
 
 import routes from '../../constants/routes'
 
-import './index.css'
+import './index.scss'
 
 const data = [
   {
@@ -30,6 +30,10 @@ const links = data.map((item, idx) => (
         path={ `${routes.ICON}/${item.img}` }
         className="item-image" />
     </a>
+    <div className="circles">
+      <div className="circle-inner" />
+      <div className="circle-outer" />
+    </div>
   </li>
 ));
 
