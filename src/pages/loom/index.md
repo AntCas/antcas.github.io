@@ -3,7 +3,7 @@ path: "/loom"
 date: "2017"
 title: "Loom"
 image: "loom.png"
-color: "#eb5b53"
+color: "#fd5f5f"
 ---
 Oooooh-weeee, my first blog post!
 First post Ipsum is a major key to success. Congratulations, you played yourself. Surround yourself with angels. Celebrate success right, the only way, apple. 

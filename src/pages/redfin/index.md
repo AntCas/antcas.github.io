@@ -3,7 +3,7 @@ path: "/redfin"
 date: "2016"
 title: "Redfin"
 image: "redfin.png"
-color: "#c8352b"
+color: "#c82022"
 ---
 Oooooh-weeee, my first blog post!
 First post Ipsum is a major key to success. Congratulations, you played yourself. Surround yourself with angels. Celebrate success right, the only way, apple. 
