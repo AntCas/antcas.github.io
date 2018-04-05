@@ -30,10 +30,6 @@ const links = data.map((item, idx) => (
         path={ `${routes.ICON}/${item.img}` }
         className="item-image" />
     </a>
-    <div className="circles">
-      <div className="circle-inner" />
-      <div className="circle-outer" />
-    </div>
   </li>
 ));
 

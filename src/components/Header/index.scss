@@ -1,6 +1,9 @@
+@import '../../common/fonts.scss';
+@import '../../common/colors.scss';
+
 .header {
   margin-bottom: 24px;
-  font-family: Helvetica, sans-serif;
+  font-family: $primary-font-family;
 
   .header-subcontainer {
     margin: 0 auto;
@@ -14,6 +17,14 @@
     h1 {
       margin: 0;
       text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+
+      a, a:visited {
+        text-decoration: none;
+        cursor: pointer;
+        color: $black;
+      }
     }
 
     .links {
@@ -33,46 +44,11 @@
         .item-image {
           height: 32px;
           width: 32px;
-          fill: #484848;
-        }
-
-        .circles {
-          opacity: 0;
-          transition: all 400ms ease-in-out;
+          fill: $black;
 
           &:hover {
-            .circle-inner {
-              transform: rotate(180deg);
-            }
-            .circle-outer {
-              transform: rotate(-225deg);
-            }
-
-            opacity: 1;
+            opacity: .8;
           }
-
-          .circle-inner {
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            height: 48px;
-            width: 48px;
-            border: 2px solid;
-          }
-          .circle-outer {
-            position: absolute;
-            top: -13px;
-            left: -13px;
-            height: 56px;
-            width: 56px;
-            border: 1px solid;
-          }
-          .circle-inner, .circle-outer {
-            border-radius: 100%;
-            transition: all 400ms ease-in-out;
-            border-color: black transparent black transparent;
-          }
-
         }
       }
     }

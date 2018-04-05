@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
+import ReactSVG from 'react-svg';
 
 import DynamicOutlines from '../components/DynamicOutlines';
 
@@ -13,6 +14,13 @@ export default function Index({ data }) {
 
   return (
     <div className="index-page">
+      <div className="front-page-header">
+        <h2>Product Management & Engineering</h2>
+        <h3>Explore</h3>
+        <ReactSVG
+          path={ `${routes.ICON}/arrow_down.svg` }
+          className="down-arrow" />
+      </div>
       <div className="posts">
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)

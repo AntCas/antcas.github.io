@@ -1,13 +1,40 @@
 @import '../common/breakpoints.scss';
+@import '../common/fonts.scss';
+@import '../common/colors.scss';
 
 $card-width: 400px;
 $card-height: 200px;
 
 .index-page {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-top: 24px;
   width: 100%;
+
+  .front-page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $primary-font-family;
+    color: $black;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    h3 {
+      margin-top: 24px;
+      font-size: 24px;
+    }
+
+    .down-arrow {
+      margin-top: 12px;
+      width: 24px;
+      height: 24px;
+      fill: $black;
+    }
+  }
 
   .posts {
     display: inline-flex;
@@ -15,7 +42,7 @@ $card-height: 200px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 24px auto;
     text-align: center;
 
     a {
