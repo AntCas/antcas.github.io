@@ -4,6 +4,7 @@ date: "2016"
 title: "Luvozo"
 image: "luvozo.png"
 color: "#246478"
+shadow: "#246478"
 topics: ["healthcare", "engineering", "robotics"]
 tech: ["python", "sqlite", "postgres"]
 ---

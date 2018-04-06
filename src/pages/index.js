@@ -9,6 +9,19 @@ import routes from '../constants/routes';
 
 import './index.scss';
 
+function hexToRgbA(hex, alpha){
+    var c;
+    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+        c= hex.substring(1).split('');
+        if(c.length== 3){
+            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+        }
+        c= '0x'+c.join('');
+        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+','+alpha+')';
+    }
+    throw new Error('Bad Hex');
+}
+
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
 
@@ -25,21 +38,23 @@ export default function Index({ data }) {
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }, idx) => {
-          const { color, border} = post.frontmatter; 
-          const borderColor = border ? border : color;
+          const { color, shadow } = post.frontmatter; 
           const postId = `blog-post-preview-${idx}`;
           return (
             <Link to={post.frontmatter.path} key={idx}>
               <div className="blog-post-preview"
                 id={ postId }
-                style={{ background: post.frontmatter.color }}>
+                style={{
+                  background: post.frontmatter.color,
+                  boxShadow: `0px 5px 100px 0px ${hexToRgbA(shadow, 0.4)}`
+                }}>
                 <img className="preview-image"
                   src={ `${routes.LOGO}/${post.frontmatter.image}` } />
                 { /*
                 <h1>{post.frontmatter.title}</h1>
                 <h2>{post.frontmatter.date}</h2>
                 <p>{post.excerpt}</p> */ }
-                <DynamicOutlines borderColor={ borderColor }/>
+                <DynamicOutlines borderColor={ color }/>
               </div>
             </Link>
           );
@@ -60,6 +75,7 @@ export const pageQuery = graphql`
             path
             image
             color
+            shadow
           }
         }
       }

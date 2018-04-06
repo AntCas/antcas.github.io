@@ -4,6 +4,7 @@ date: "2016"
 title: "Bitcamp"
 image: "bitcamp.png"
 color: "#cdf2fd"
+shadow: "#ed753c"
 topics: ["hackathon", "event planning", "product"]
 ---
 Bitcamp is the largest hackathon at the University of Maryland, hosting 1,500+ attendees anually. 
