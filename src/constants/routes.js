@@ -1,2 +1,2 @@
-exports.ICON = '/static/icon';
-exports.LOGO = '/static/logo';
+exports.ICON = '/icon';
+exports.LOGO = '/logo';
