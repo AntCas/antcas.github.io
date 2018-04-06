@@ -59,7 +59,6 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             image
-            border
             color
           }
         }
