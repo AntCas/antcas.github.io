@@ -22,6 +22,8 @@ $transition-time: 150ms;
   .side-c, .side-d {
     width: $border-width;
     height: 0px;
+  }
+  .side-a, .side-c {
     transition-delay: $transition-time;
   }
   .side-a {
