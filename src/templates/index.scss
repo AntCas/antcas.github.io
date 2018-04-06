@@ -1,0 +1,36 @@
+@import '../common/breakpoints.scss';
+@import '../common/colors.scss';
+@import '../common/fonts.scss';
+
+.blog-post-container {
+  max-width: 95%;
+  margin: auto;
+
+  @include breakpoint(sm) {
+    max-width: 80%;
+  }
+  
+  font-family: $primary-font-family;
+
+  h1, h2, h3, p {
+    margin-top: 12px;
+    line-height: 1.5;
+    color: $black;
+  }
+
+  h1 {
+    font-size: $font-size-h1;
+  }
+  h2 {
+    font-size: $font-size-h2;
+  }
+  h3 {
+    font-size: $font-size-h3;
+  }
+  p {
+    font-size: $font-size-p;
+  }
+  code {
+    background: #ccc;
+  }
+}

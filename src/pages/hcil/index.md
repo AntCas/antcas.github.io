@@ -4,9 +4,20 @@ date: "2017"
 title: "HCIL - Project Thermo"
 image: "hcil.jpg"
 color: "#ffffff"
+topics: ["research", "engineering", "human-computer interaction", "computer vision"]
+tech: ["python", "docker"]
 ---
-Oooooh-weeee, my first blog post!
-First post Ipsum is a major key to success. Congratulations, you played yourself. Surround yourself with angels. Celebrate success right, the only way, apple. 
- 
-The key is to drink coconut, fresh coconut, trust me. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. 
+https://github.com/AntCas/OpenPanoThermo
+
+Project thermo reliably creates thermographic panoramas of indoor locations in order to identify energy inefficiencies in rooms and buildings.
+
+I worked on this project as a volunteer at the Human Computer Interaction lab at the University of Maryland, College Park during my last semester there as a Computer Science senior.
+
+The software I wrote was integrated into a self-contained device which could take a series of thermographic images over the course of several days in order to map heat issues over time.
+
+The project is a fork of [OpenPano](https://github.com/ppwwyyxx/OpenPano) adapted for thermographic images.
+
+After many dead-ends I ended up achieving great results by first normalizing and enhancing the images using (ImageMagick)[https://www.imagemagick.org/script/index.php], then stitching them together using OpenPano.
+
+[Images]
 

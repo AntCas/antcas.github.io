@@ -4,9 +4,17 @@ date: "2016"
 title: "Redfin"
 image: "redfin.png"
 color: "#c82022"
+topics: ["internship", "real-estate", "engineering"]
+tech: ["React", "Java", "Javascript"]
 ---
-Oooooh-weeee, my first blog post!
-First post Ipsum is a major key to success. Congratulations, you played yourself. Surround yourself with angels. Celebrate success right, the only way, apple. 
- 
-The key is to drink coconut, fresh coconut, trust me. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. 
+Redfin is a vertically-integrated real estate and technology company.
+
+During my internship at Redfin I worked on the agent-tools team, building software for use by Redfin’s in-house real estate agents.
+
+I completed two major projects during my time there.
+
+The first project I completed improved the workflow of real-estate agents by allowing them to get their over time approved more quickly by management. This was, at the time, the most requested feature by agents as well as one of the oldest and hairiest parts of the codebase. 
+
+The second project automated the process of creating neighborhood reports. Redfin agents use these reports to help educate customers about their home. Using my software, agents can quickly show customers how much their home was worth based on local trends and comparable listings.
+
 

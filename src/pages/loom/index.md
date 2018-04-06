@@ -4,9 +4,12 @@ date: "2017"
 title: "Loom"
 image: "loom.png"
 color: "#fd5f5f"
+topics: "engineering"
+tech: ["JavaScript", "React", "Postgres", "Node.js"]
 ---
-Oooooh-weeee, my first blog post!
-First post Ipsum is a major key to success. Congratulations, you played yourself. Surround yourself with angels. Celebrate success right, the only way, apple. 
- 
-The key is to drink coconut, fresh coconut, trust me. Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going to enjoy our breakfast. 
+Loom builds a chrome extension for creating quick videos. It’s incredibly handy for customer service, sales, and bug reports just to name a few use cases. The company is backed by Slack and UpFront ventures among others.
+
+While at Loom I rebuilt their on boarding process and their settings panel in React. Both pages required extensive rewrites which touched every part of the technology stack.
+
+[Images of all pages worked on ]
 
