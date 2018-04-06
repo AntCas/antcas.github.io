@@ -6,13 +6,25 @@
   max-width: 95%;
   margin: auto;
 
-  @include breakpoint(sm) {
-    max-width: 80%;
+  @include breakpoint(xs) {
+    max-width: 65%;
+  }
+
+  @include breakpoint(md) {
+    max-width: 50%;
   }
   
   font-family: $primary-font-family;
 
-  h1, h2, h3, p {
+  ol {
+    list-style: 1;
+    padding-left: 32px;
+  }
+
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  h1, h2, h3, p, ol {
     margin-top: 12px;
     line-height: 1.5;
     color: $black;
@@ -27,10 +39,13 @@
   h3 {
     font-size: $font-size-h3;
   }
-  p {
+  p, li {
     font-size: $font-size-p;
   }
   code {
-    background: #ccc;
+    background: $pale-yellow;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-family: $font-family-mono;
   }
 }

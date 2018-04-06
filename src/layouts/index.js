@@ -4,7 +4,8 @@ import Helmet from 'react-helmet'
 import Media from 'react-media'
 
 import Header from '../components/Header'
-import './reset.css'
+
+import './reset.css';
 import './index.scss'
 
 export default class TemplateWrapper extends React.Component {

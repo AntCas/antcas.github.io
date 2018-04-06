@@ -27,10 +27,11 @@
       }
     }
 
-    .links {
+    ul.links {
       display: inline-flex;
       flex-direction: row;
       margin-left: auto;
+      list-style: none;
 
       .item-link {
         height: 32px;
