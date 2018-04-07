@@ -1,0 +1,13 @@
+@import '../../common/colors.scss';
+
+.page-break {
+  display: flex;
+  flex-direction: row;
+  .bullet {
+    height: 5px;
+    width: 5px;
+    margin: 0 12px;
+    border-radius: 5px;
+    background-color: $black;
+  }
+}

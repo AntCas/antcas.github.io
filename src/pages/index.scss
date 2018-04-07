@@ -35,7 +35,11 @@ $card-height: 200px;
     a.email, a.email:hover, a.email:visited {
       margin-top: 32px;
       color: $blue;
-      font-size: $font-size-h2;
+      font-size: $font-size-h3;
+
+      @include breakpoint(xs) {
+        font-size: $font-size-h2;
+      }
 
       .hide {
         position: absolute;

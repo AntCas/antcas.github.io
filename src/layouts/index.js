@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Media from 'react-media'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 import './reset.css';
 import './index.scss'
@@ -25,6 +26,7 @@ export default class TemplateWrapper extends React.Component {
             <div>{ this.props.children() }</div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
