@@ -1,6 +1,7 @@
+@import '../common/animations.scss';
 @import '../common/breakpoints.scss';
-@import '../common/fonts.scss';
 @import '../common/colors.scss';
+@import '../common/fonts.scss';
 
 $card-width: 350px;
 $card-height: 200px;
@@ -28,11 +29,54 @@ $card-height: 200px;
       font-size: 24px;
     }
 
-    .down-arrow {
-      margin-top: 12px;
+    h3.work-byline {
+      @include keyframes(slide-down) {
+        0% {
+          transform: translateY(-32px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+
+      @include animation('slide-down 500ms');
+    }
+
+    .down-arrow-wrapper {
+      position: relative;
+      align-self: center;
+      margin-top: 6px;
+      height: 12px;
       width: 24px;
-      height: 24px;
-      fill: $black;
+      transform: rotate(45deg);
+
+      .down-arrow {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 12px;
+        height: 12px;
+        //fill: $black;
+
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        border-radius: 0px 0px 2px 0px;
+
+        @include keyframes(slide-down-arrow) {
+          0% {
+            transform: translate(-32px, -32px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0px);
+            opacity: 1;
+          }
+        }
+
+        @include animation('slide-down-arrow 650ms');
+      }
     }
   }
 

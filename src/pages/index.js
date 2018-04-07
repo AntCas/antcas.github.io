@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
-import ReactSVG from 'react-svg';
 
 import DynamicOutlines from '../components/DynamicOutlines';
 
@@ -29,10 +28,12 @@ export default function Index({ data }) {
     <div className="index-page">
       <div className="front-page-header">
         <h2>Product Management & Engineering</h2>
-        <h3>Explore</h3>
-        <ReactSVG
-          path={ `${routes.ICON}/arrow_down.svg` }
-          className="down-arrow" />
+        <h3>Contact</h3>
+        <a href="mailto:anthonycastrio+me@gmail.com">anthonycastrio@gmail.com</a>
+        <h3 className="work-byline">Good Work</h3>
+        <div className="down-arrow-wrapper">
+          <div className="down-arrow" />
+        </div>
       </div>
       <div className="posts">
       {posts
