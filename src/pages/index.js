@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import Helmet from "react-helmet";
 
 import DynamicOutlines from '../components/DynamicOutlines';
+import DownArrow from '../components/DownArrow';
 
 import routes from '../constants/routes';
 
@@ -30,9 +31,7 @@ export default function Index({ data }) {
         <h1>Anthony Castrio</h1>
         <h2>Product Management & Engineering</h2>
         <a className="email" href="mailto:anthonycastrio+public@gmail.com">anthonycastrio<span className="hide">+public</span>@gmail.com</a>
-        <div className="down-arrow-wrapper">
-          <div className="down-arrow" />
-        </div>
+        <DownArrow />
       </div>
       <div className="posts">
       {posts
