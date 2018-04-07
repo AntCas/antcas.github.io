@@ -29,7 +29,7 @@
   p, ol, ul {
     margin-top: 12px;
   }
-  h1, h2, h3, p, ol {
+  h1, h2, h3, p, ol, code {
     line-height: 1.5;
     color: $black;
   }
@@ -51,5 +51,6 @@
     padding: 3px 6px;
     border-radius: 3px;
     font-family: $font-family-mono;
+    font-weight: bold;
   }
 }

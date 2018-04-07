@@ -21,13 +21,18 @@ $card-height: 200px;
     color: $black;
 
     h2 {
-      font-size: 32px;
+      font-size: $font-size-h2;
+      text-align: center;
+
+      @include breakpoint(sm) {
+        font-size: $font-size-h1;
+      }
     }
 
     a.email, a.email:hover, a.email:visited {
       margin-top: 32px;
-      font-size: $font-size-h2;
       color: $blue;
+      font-size: $font-size-h2;
 
       .hide {
         position: absolute;
@@ -53,11 +58,11 @@ $card-height: 200px;
     }
 
     h2 {
-      @include animation('slide-down 1500ms');
+      @include animation('slide-down 1200ms');
     }
 
     a.email {
-      @include animation('slide-down 1000ms');
+      @include animation('slide-down 800ms');
     }
 
     .down-arrow-wrapper {
@@ -89,7 +94,7 @@ $card-height: 200px;
           }
         }
 
-        @include animation('slide-down-arrow 500ms');
+        @include animation('slide-down-arrow 400ms');
       }
     }
   }

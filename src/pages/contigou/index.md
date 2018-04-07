@@ -13,6 +13,8 @@ ContigoU helps patients find skilled nursing rehab.
 
 In late 2017 I was contracted to build out the mvp for a seed stage healthcare technology startup. The company was founded by a discharge nurse and veteran of the healthcare industry who wanted to fix the problems she’d experienced first hand.
 
+###Market
+
 Skilled Nursing Rehab is where you go after a stroke, car accident, or other debilitating health problem and after the hospital has you in a stable condition. Patients usually stay in skilled nursing for about a month.
 
 Finding one of these facilities on your own is very difficult. Hospitals don’t give much help and information online is scattered. ContigoU solved these issues by giving you a hotel-style search for skilled nursing rehab.
