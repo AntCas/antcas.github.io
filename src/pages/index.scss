@@ -36,6 +36,10 @@ $card-height: 200px;
       }
     }
 
+    a.email:hover {
+      opacity: $hover-opacity; 
+    }
+
 
     @include keyframes(slide-down) {
       0% {
@@ -51,6 +55,7 @@ $card-height: 200px;
     h2 {
       @include animation('slide-down 1500ms');
     }
+
     a.email {
       @include animation('slide-down 1000ms');
     }
