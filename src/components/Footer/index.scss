@@ -28,14 +28,29 @@
     .info {
       margin-top: 12px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+
+      @include breakpoint(xxs) {
+        flex-direction: row;
+      }
+
       h4 {
         min-width: 130px;
-        text-align: right;
+        max-width: 100%;
+        font-weight: bold;
+        text-align: left;
+        margin: 6px 0;
+        @include breakpoint(xxs) {
+          text-align: right;
+          margin: 0;
+        }
       }
       p {
-        margin-left: 12px;
         line-height: 1.2;
+        margin-left: 0;
+        @include breakpoint(xxs) {
+          margin-left: 12px;
+        }
       }
     }
   }

@@ -1,6 +1,10 @@
 // https://medium.com/developing-with-sass/creating-a-dead-simple-sass-mixin-to-handle-responsive-breakpoints-889927b37740
 
 @mixin breakpoint($class) {
+  @if $class == xxs {
+    @media (min-width: 376px) { @content; }
+  }
+
   @if $class == xs {
     @media (min-width: 576px) { @content; }
   }
