@@ -17,16 +17,19 @@ $card-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: $primary-font-family;
+    font-family: $font-family-mono;
     color: $black;
 
+    h1 {
+      font-size: $font-size-h1;
+      text-align: center;
+    }
+
     h2 {
+      margin-top: 32px;
       font-size: $font-size-h2;
       text-align: center;
 
-      @include breakpoint(sm) {
-        font-size: $font-size-h1;
-      }
     }
 
     a.email, a.email:hover, a.email:visited {
@@ -55,6 +58,10 @@ $card-height: 200px;
         transform: translateY(0px);
         opacity: 1;
       }
+    }
+
+    h1 {
+      @include animation('slide-down 1600ms');
     }
 
     h2 {

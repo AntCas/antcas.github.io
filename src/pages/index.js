@@ -27,6 +27,7 @@ export default function Index({ data }) {
   return (
     <div className="index-page">
       <div className="front-page-header">
+        <h1>Anthony Castrio</h1>
         <h2>Product Management & Engineering</h2>
         <a className="email" href="mailto:anthonycastrio+public@gmail.com">anthonycastrio<span className="hide">+public</span>@gmail.com</a>
         <div className="down-arrow-wrapper">
