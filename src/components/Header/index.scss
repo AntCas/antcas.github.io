@@ -14,16 +14,15 @@
     flex-direction: row;
     align-items: center;
 
-    h1 {
+    .root-icon-container {
       margin: 0;
-      text-align: center;
-      font-size: 18px;
-      font-weight: bold;
+      cursor: pointer;
 
-      a, a:visited {
-        text-decoration: none;
-        cursor: pointer;
-        color: $black;
+      .root-icon {
+        fill: $black;
+        height: 48px;
+        width: 48px;
+        margin: auto;
       }
     }
 

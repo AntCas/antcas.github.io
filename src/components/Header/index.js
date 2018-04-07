@@ -36,9 +36,13 @@ const links = data.map((item, idx) => (
 const Header = () => (
   <div className="header">
     <div className="header-subcontainer">
-      <h1> 
-        <Link to="/">Anthony Castrio</Link>
-      </h1>
+      <div className="root-icon-container">
+        <Link to="/">
+          <ReactSVG
+            path={ `${routes.ICON}/ant.svg` }
+            className="root-icon" />
+        </Link>
+      </div>
       <ul className="links">
         { links }
       </ul>
