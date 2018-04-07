@@ -24,30 +24,41 @@ $card-height: 200px;
       font-size: 32px;
     }
 
-    h3 {
-      margin-top: 24px;
-      font-size: 24px;
+    a.email, a.email:hover, a.email:visited {
+      margin-top: 32px;
+      font-size: $font-size-h2;
+      color: $blue;
+
+      .hide {
+        position: absolute;
+        top: -500px;
+        left: -500px;
+      }
     }
 
-    h3.work-byline {
-      @include keyframes(slide-down) {
-        0% {
-          transform: translateY(-32px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateY(0px);
-          opacity: 1;
-        }
-      }
 
-      @include animation('slide-down 500ms');
+    @include keyframes(slide-down) {
+      0% {
+        transform: translateY(-48px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+
+    h2 {
+      @include animation('slide-down 1500ms');
+    }
+    a.email {
+      @include animation('slide-down 1000ms');
     }
 
     .down-arrow-wrapper {
       position: relative;
       align-self: center;
-      margin-top: 6px;
+      margin-top: 32px;
       height: 12px;
       width: 24px;
       transform: rotate(45deg);
@@ -58,11 +69,9 @@ $card-height: 200px;
         left: 0;
         width: 12px;
         height: 12px;
-        //fill: $black;
 
         border-bottom: 2px solid black;
         border-right: 2px solid black;
-        border-radius: 0px 0px 2px 0px;
 
         @include keyframes(slide-down-arrow) {
           0% {
@@ -75,7 +84,7 @@ $card-height: 200px;
           }
         }
 
-        @include animation('slide-down-arrow 650ms');
+        @include animation('slide-down-arrow 500ms');
       }
     }
   }
@@ -114,6 +123,17 @@ $card-height: 200px;
       max-width: 60%;
       max-height: 90%;
       margin: auto;
+
+      @include keyframes(fade-in) {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @include animation('fade-in 1500ms');
     }
   }
 

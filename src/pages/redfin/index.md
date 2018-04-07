@@ -4,7 +4,7 @@ date: "2016"
 title: "Redfin"
 image: "redfin.png"
 color: "#c82022"
-shadow: "#c82022"
+shadow: "#4c0404"
 topics: ["internship", "real-estate", "engineering"]
 tech: ["React", "Java", "Javascript"]
 ---

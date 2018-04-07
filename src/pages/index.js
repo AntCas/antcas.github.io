@@ -28,9 +28,7 @@ export default function Index({ data }) {
     <div className="index-page">
       <div className="front-page-header">
         <h2>Product Management & Engineering</h2>
-        <h3>Contact</h3>
-        <a href="mailto:anthonycastrio+me@gmail.com">anthonycastrio@gmail.com</a>
-        <h3 className="work-byline">Good Work</h3>
+        <a className="email" href="mailto:anthonycastrio+public@gmail.com">anthonycastrio<span className="hide">+public</span>@gmail.com</a>
         <div className="down-arrow-wrapper">
           <div className="down-arrow" />
         </div>
@@ -47,7 +45,7 @@ export default function Index({ data }) {
                 id={ postId }
                 style={{
                   background: post.frontmatter.color,
-                  boxShadow: `0px 5px 100px 0px ${hexToRgbA(shadow, 0.4)}`
+                  boxShadow: `0px 5px 40px 0px ${hexToRgbA(shadow, 0.85)}`
                 }}>
                 <img className="preview-image"
                   src={ `${routes.LOGO}/${post.frontmatter.image}` } />

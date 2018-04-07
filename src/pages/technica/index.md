@@ -4,7 +4,7 @@ date: "2015"
 title: "Technica"
 image: "technica.gif"
 color: "#111111"
-shadow: "#ec7eaf"
+shadow: "#fd0071"
 topics: ["hackathon", "event planning", "product"]
 ---
 
