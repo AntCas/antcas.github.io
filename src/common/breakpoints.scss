@@ -5,7 +5,7 @@
     @media (min-width: 376px) { @content; }
   }
 
-  @if $class == xs {
+  @else if $class == xs {
     @media (min-width: 576px) { @content; }
   }
  
