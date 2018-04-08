@@ -29,12 +29,14 @@
     .root-icon-container {
       margin: 0;
       cursor: pointer;
+      &:hover {
+        opacity: $hover-opacity;
+      }
 
       .root-icon {
         fill: $black;
         height: 48px;
         width: 48px;
-        margin: auto;
       }
     }
 
