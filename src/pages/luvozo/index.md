@@ -10,7 +10,7 @@ tech: ["python", "sqlite", "postgres"]
 
 http://luvozo.com/
 
-Luvozo build robots for senior living.
+Luvozo builds robots for senior living.
 
 During my time at Luvozo I worked on two National Science Foundation backed projects improving the lives of senior citizens.
 
