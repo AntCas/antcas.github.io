@@ -4,7 +4,6 @@ date: "2017"
 title: "Loom"
 image: "loom.png"
 color: "#fd5f5f"
-shadow: "#4c0d0d"
 topics: "engineering"
 tech: ["JavaScript", "React", "Postgres", "Node.js"]
 ---

@@ -4,7 +4,6 @@ date: "2017"
 title: "HCIL - Project Thermo"
 image: "hcil.png"
 color: "#212020"
-shadow: "#5d3936"
 topics: ["research", "engineering", "human-computer interaction", "computer vision"]
 tech: ["python", "docker"]
 ---
