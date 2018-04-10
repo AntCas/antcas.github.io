@@ -3,7 +3,7 @@ path: "/contigou"
 date: "2018"
 title: "ContigoU"
 image: "contigou.svg"
-color: "#8cfdff"
+color: "#8ccfff"
 shadow: "#29657b"
 topics: ["healthcare", "engineering", "product"]
 tech: ["JavaScript", "React", "Node.js", "SQL", "Python"]

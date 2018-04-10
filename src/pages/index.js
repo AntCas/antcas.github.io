@@ -45,7 +45,7 @@ export default function Index({ data }) {
                 id={ postId }
                 style={{
                   background: post.frontmatter.color,
-                  boxShadow: `0px 5px 40px 0px ${hexToRgbA(shadow, 0.85)}`
+                  //boxShadow: `0px 5px 40px 0px ${hexToRgbA(shadow, 0.85)}`
                 }}>
                 <img className="preview-image"
                   src={ `${routes.LOGO}/${post.frontmatter.image}` } />
@@ -53,7 +53,7 @@ export default function Index({ data }) {
                 <h1>{post.frontmatter.title}</h1>
                 <h2>{post.frontmatter.date}</h2>
                 <p>{post.excerpt}</p> */ }
-                <DynamicOutlines borderColor={ color }/>
+                <DynamicOutlines borderColor={ color } />
               </div>
             </Link>
           );

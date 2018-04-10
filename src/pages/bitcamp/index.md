@@ -3,7 +3,7 @@ path: "/bitcamp"
 date: "2016"
 title: "Bitcamp"
 image: "bitcamp.png"
-color: "#cdf2fd"
+color: "#1a2e33"
 shadow: "#344146"
 topics: ["hackathon", "event planning", "product"]
 ---
