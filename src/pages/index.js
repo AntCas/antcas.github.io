@@ -9,59 +9,44 @@ import routes from '../constants/routes';
 
 import './index.scss';
 
-function hexToRgbA(hex, alpha){
-    var c;
-    if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
-        c= hex.substring(1).split('');
-        if(c.length== 3){
-            c= [c[0], c[0], c[1], c[1], c[2], c[2]];
-        }
-        c= '0x'+c.join('');
-        return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+','+alpha+')';
-    }
-    throw new Error('Bad Hex');
-}
-
 export default function Index({ data }) {
-  const { edges: posts } = data.allMarkdownRemark;
+  const { edges } = data.allMarkdownRemark;
+
+  const posts = edges.filter(post => post.node.frontmatter.title.length > 0)
+        .map(({ node: post }, idx) => {
+          const { color, shadow } = post.frontmatter; 
+          const postId = `blog-post-preview-${idx}`;
+
+          return (
+            <Link to={post.frontmatter.path} key={idx}>
+              <div className="blog-post-preview"
+                id={ postId }
+                style={{ background: post.frontmatter.color }}>
+                <img className="preview-image"
+                  src={ `${routes.LOGO}/${post.frontmatter.image}` } />
+                <DynamicOutlines borderColor={ color } />
+              </div>
+            </Link>
+          );
+        });
 
   return (
     <div className="index-page">
       <div className="front-page-header">
         <h1>Anthony Castrio</h1>
         <h2>Product Management & Engineering</h2>
-        <a className="email" href="mailto:anthonycastrio+public@gmail.com">anthonycastrio<span className="hide">+public</span>@gmail.com</a>
+        <a className="email" href="mailto:anthonycastrio+public@gmail.com">
+          anthonycastrio<span className="hide">+public</span>@gmail.com
+        </a>
         <DownArrow />
       </div>
       <div className="posts">
-      {posts
-        .filter(post => post.node.frontmatter.title.length > 0)
-        .map(({ node: post }, idx) => {
-          const { color, shadow } = post.frontmatter; 
-          const postId = `blog-post-preview-${idx}`;
-          return (
-            <Link to={post.frontmatter.path} key={idx}>
-              <div className="blog-post-preview"
-                id={ postId }
-                style={{
-                  background: post.frontmatter.color,
-                  //boxShadow: `0px 5px 40px 0px ${hexToRgbA(shadow, 0.85)}`
-                }}>
-                <img className="preview-image"
-                  src={ `${routes.LOGO}/${post.frontmatter.image}` } />
-                { /*
-                <h1>{post.frontmatter.title}</h1>
-                <h2>{post.frontmatter.date}</h2>
-                <p>{post.excerpt}</p> */ }
-                <DynamicOutlines borderColor={ color } />
-              </div>
-            </Link>
-          );
-        })}
+        { posts }
       </div>
     </div>
   );
 }
+
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
