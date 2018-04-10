@@ -6,6 +6,11 @@ image: "bitcamp.png"
 color: "#1a2e33"
 topics: ["hackathon", "event planning", "product"]
 ---
+
+[https://bit.camp/](https://bit.camp/)
+
+![alt text](/images/bitcamp/crowd.jpg "A crowd of students at Bitcamp")
+
 Bitcamp is the largest hackathon at the University of Maryland, hosting 1,500+ attendees anually. 
 
 In 2016 I took over as executive director of the event.
@@ -31,3 +36,6 @@ Once the event planning was underway we got serious about fundraising and budget
 For details check out my Hackcon talk [Running a Hackathon in the Red](https://www.youtube.com/watch?v=IRK3KmhE_go) or [read the slides](http://slides.com/anthonycastrio/red#/).
 
 [Bitcamp Operations Manual](https://docs.google.com/document/d/1z9iQgv2LPZKQVWWE-FGbt5mcpAw93x-d0C-s_gF5Vu8/edit?usp=sharing)
+
+
+![alt text](/images/bitcamp/bitcamp.png "Bitcamp logo")

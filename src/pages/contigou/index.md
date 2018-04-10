@@ -8,6 +8,10 @@ topics: ["healthcare", "engineering", "product"]
 tech: ["JavaScript", "React", "Node.js", "SQL", "Python"]
 ---
 
+[https://contigou.com/](https://contigou.com/)
+
+![alt text](/images/contigou/homepage.png "ContigoU Homepage")
+
 ContigoU helps patients find skilled nursing rehab.
 
 In late 2017 I was contracted to build out the mvp for a seed stage healthcare technology startup. The company was founded by a discharge nurse and veteran of the healthcare industry who wanted to fix the problems she’d experienced first hand.
@@ -17,6 +21,8 @@ In late 2017 I was contracted to build out the mvp for a seed stage healthcare t
 Skilled Nursing Rehab is where you go after a stroke, car accident, or other debilitating health problem and after the hospital has you in a stable condition. Patients usually stay in skilled nursing for about a month.
 
 Finding one of these facilities on your own is very difficult. Hospitals don’t give much help and information online is scattered. ContigoU solved these issues by giving you a hotel-style search for skilled nursing rehab.
+
+![alt text](/images/contigou/comparisons.png "ContigoU Comparisons Page")
 
 ##Product
 
@@ -33,6 +39,8 @@ I travelled with the founder up and down the Bay Area and interviewed dozens of 
 3. Skilled Nursing Facilities were struggling to reach patients
 
 A listings website would sit right at the crux of these problems and help solve all three simultaneously.
+
+![alt text](/images/contigou/listings.png "ContigoU Listings Page")
 
 ###Product Spec
 I created a detailed product specification based on the requirements we identified, including mockups, examples of products with a similar UX in other verticals and a mood board. Using this document I coordinated with another freelancer to get the product designed and branded. After several iterations we arrived at a great looking MVP.
