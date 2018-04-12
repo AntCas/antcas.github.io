@@ -12,6 +12,14 @@ module.exports = {
         name: 'pages',
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-117407998-1",
+        // Puts tracking script in the head instead of the body
+        head: true
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`
   ],
