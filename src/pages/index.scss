@@ -102,7 +102,8 @@ $card-height: 200px;
     align-items: center;
     margin: 24px auto;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
+    max-width: $card-width * 3 + 25px * 6;
     z-index: 1;
 
     a {
