@@ -6,7 +6,7 @@ When deploying the website you might need to first delete `node-modules/gh-pages
 
 Then deploy to GitHub pages
 
-`gatsby deploy`
+`npm run deploy`
 
 
 # gatsby-starter-default
