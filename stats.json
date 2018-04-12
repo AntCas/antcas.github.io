@@ -1,0 +1,78 @@
+{
+  "assetsByChunkName": {
+    "path---loom": [
+      "path---loom-988372c1ebec4a481d65.js",
+      "path---loom-988372c1ebec4a481d65.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-195060e33ffa18cef72d.js",
+      "component---src-pages-index-js-195060e33ffa18cef72d.js.map"
+    ],
+    "path---technica": [
+      "path---technica-cefb54ba86cb5f0c439b.js",
+      "path---technica-cefb54ba86cb5f0c439b.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---projects": [
+      "path---projects-213541db6fedfaab9d34.js",
+      "path---projects-213541db6fedfaab9d34.js.map"
+    ],
+    "component---src-templates-blog-post-js": [
+      "component---src-templates-blog-post-js-1172234aeb7551076a25.js",
+      "component---src-templates-blog-post-js-1172234aeb7551076a25.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-422a1824e11ec9840f16.js",
+      "component---src-layouts-index-js-422a1824e11ec9840f16.js.map"
+    ],
+    "path---luvozo": [
+      "path---luvozo-bbbc534d7301e4a866ad.js",
+      "path---luvozo-bbbc534d7301e4a866ad.js.map"
+    ],
+    "path---index": [
+      "path---index-82b4cac029360bfbe768.js",
+      "path---index-82b4cac029360bfbe768.js.map"
+    ],
+    "path---hcil": [
+      "path---hcil-68fd3f97c7a4c53bd7f7.js",
+      "path---hcil-68fd3f97c7a4c53bd7f7.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-7392ea54dc158570a715.js",
+      "commons-7392ea54dc158570a715.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-a9d98fd1b1b1cb08c59f.js",
+      "build-js-styles.css",
+      "app-a9d98fd1b1b1cb08c59f.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---redfin": [
+      "path---redfin-c027cf2a2b5989108255.js",
+      "path---redfin-c027cf2a2b5989108255.js.map"
+    ],
+    "path---bitcamp": [
+      "path---bitcamp-705b4ef9b46a29ac2ae1.js",
+      "path---bitcamp-705b4ef9b46a29ac2ae1.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---contigou": [
+      "path---contigou-165dd838e37074419798.js",
+      "path---contigou-165dd838e37074419798.js.map"
+    ]
+  }
+}
