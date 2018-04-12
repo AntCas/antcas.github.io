@@ -1,6 +1,12 @@
-## Deploying
+## Deploy
 
 When deploying the website you might need to first delete `node-modules/gh-pages/.cache`.
+
+`rm -rf node_modules/gh-pages/.cache`
+
+Then deploy to GitHub pages
+
+`gatsby deploy`
 
 
 # gatsby-starter-default
@@ -25,7 +31,3 @@ Then you can run it by:
 cd gatsby-example-site
 npm run develop
 ```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
