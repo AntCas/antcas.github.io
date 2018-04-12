@@ -1,3 +1,8 @@
+## Deploying
+
+When deploying the website you might need to first delete `node-modules/gh-pages/.cache`.
+
+
 # gatsby-starter-default
 The default Gatsby starter.
 
