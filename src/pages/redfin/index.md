@@ -16,14 +16,14 @@ During my internship at Redfin I worked on the agent-tools team, building softwa
 
 I completed two major projects during my time there.
 
-The first project I completed improved the workflow of real-estate agents by allowing them to get their over time approved more quickly by management. This was, at the time, the most requested feature by agents as well as one of the oldest and hairiest parts of the codebase. 
+The first project I completed improved the workflow of real-estate agents by allowing them to get their overtime approved more quickly by management. This was, at the time, the most requested feature by agents as well as one of the oldest and hairiest parts of the codebase. 
 
 The second project automated the process of creating neighborhood reports. Redfin agents use these reports to help educate customers about their home. Using my software, agents can quickly show customers how much their home was worth based on local trends and comparable listings.
 
 ![alt text](/images/redfin/redfin.png "Redfin Logo")
 
-###Technology:
+###Software Used:
+* `React.js` for the frontend
 
-`React.js` `Java`
-
+* `Java` for the backend
 
