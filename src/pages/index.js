@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 
 import DynamicOutlines from '../components/DynamicOutlines';
 import PageBreak from '../components/PageBreak';
+import About from '../components/About';
 
 import routes from '../constants/routes';
 
@@ -42,6 +43,9 @@ export default function Index({ data }) {
       <div className="posts">
         { posts }
       </div>
+      <PageBreak />
+      <About />
+      <PageBreak />
     </div>
   );
 }
