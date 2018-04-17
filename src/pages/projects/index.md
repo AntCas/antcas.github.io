@@ -1,7 +1,7 @@
 ---
 path: "/projects"
 date: "2017"
-title: "Projects"
+title: "Side Projects"
 image: "projects.svg"
 color: "#2f3154"
 topics: ["engineering", "product", "events"]
@@ -14,7 +14,8 @@ This website helps digital nomads save money on their taxes.
 
 [Read the blog post.](https://medium.com/@anthonycastrio/how-to-pay-no-united-states-income-tax-while-traveling-the-world-2e6aaac69299)
 
-`React.js`
+###Software Used:
+* `React.js` to build the webpage
 
 ## [Amazon Sellers LA](https://www.meetup.com/Amazon-Seller-Meetup-Los-Angeles/)
 
@@ -28,7 +29,14 @@ This hackathon project won "Best Use of IBM Bluemix" at PennApps XII.
 
 ![alt text](/images/projects/feelvision.jpg "FeelVision navigation gloves")
 
-`Pebble Smartwatch` `Leap Motion` `Python`
+###Software Used:
+* `Pebble Smartwatch` for haptic feedback
+
+* `Leap Motion` for infrared cameras
+
+* `IBM Bluemix` for object detection and classification
+
+* `Python` for scripting
 
 ## [VRoom-VRoom](https://devpost.com/software/vroom-vroom)
 
@@ -38,7 +46,12 @@ This project won "Best Hardware Hack" at Hoya Hacks in Washington, D.C.
 
 ![alt text](/images/projects/vroomvroom.jpg "Cardboard maze built for VRoom-VRoom")
 
-`Python` `HTML` `CSS` `Cardboard`
+###Software Used:
+* `Python` for scripting
+
+* `HTML` and `CSS` to build the webpage
+
+* `Cardboard` to build the maze (not software)
 
 ## [libmyolinux](https://devpost.com/software/linux-driver-for-myo-armband)
 
@@ -48,7 +61,14 @@ We reverse engineered the bluetooth protocol of the armband to provide a shared 
 
 This project won the Grand Prize at HackUMBC Fall 2014.
 
-`Python` `C` `Thalmic Myo Armband`
+###Software used:
+* `Python` for scripting
+
+* `Pygame` to build the interactive demo
+
+* `C` to process packet data
+
+* `Thalmic Myo Armband` to get gesture data
 
 ## [Eldritch Esbat](https://www.jshel.co/things/8-nose-hanging-on-physics-building)
 
@@ -58,4 +78,3 @@ Hung an 8 foot tall paper-mache nose from the side of the Physics building.
 
 
 ### [More Hackathon Projects](https://devpost.com/AntCas)
-### [More Blog Posts](https://medium.com/@anthonycastrio)

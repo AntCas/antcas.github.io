@@ -12,9 +12,9 @@ https://github.com/AntCas/OpenPanoThermo
 ![alt text](/images/hcil/thermo.jpg "un-normalized thermographic panorama")
 ![alt text](/images/hcil/thermo-normalized.jpg "normalized thermographic panorama")
 
-Project thermo reliably creates thermographic panoramas of indoor locations in order to identify energy inefficiencies in rooms and buildings.
+Project Thermo reliably creates thermographic panoramas of indoor locations in order to identify energy inefficiencies in rooms and buildings.
 
-I worked on this project as a volunteer at the Human Computer Interaction lab at the University of Maryland, College Park during my last semester there as a Computer Science senior.
+I worked on this project as a volunteer at the Human Computer Interaction lab at the University of Maryland, College Park.
 
 The software I wrote was integrated into a self-contained device which could take a series of thermographic images over the course of several days in order to map heat issues over time.
 
@@ -27,3 +27,11 @@ After many dead-ends I ended up achieving great results by first normalizing and
 > ![alt text](/images/hcil/window2.png "thermographic image of a window")
 > ![alt text](/images/hcil/window3.png "thermographic image of a window")
 
+###Software Used:
+* `Python` for scripting everything
+
+* `Image Magick` for normalizing
+
+* `Exiftools` for reading meta-data
+
+* `OpenPano` for image stitching
