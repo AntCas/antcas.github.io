@@ -1,8 +1,12 @@
 import React from "react";
 import Helmet from "react-helmet";
+import ReactSVG from "react-svg";
+import Link from "gatsby-link";
 
-import PageBreak from '../components/PageBreak';
 import CTA from '../components/CTA';
+import PageBreak from '../components/PageBreak';
+
+import routes from '../constants/routes';
 
 import './index.scss';
 
@@ -22,6 +26,13 @@ export default function Template({
           />
         </div>
       </div>
+			<Link to="/" className="home-link">
+				<ReactSVG
+					path={ `${routes.ICON}/ant.svg` }
+					className="root-icon"
+					wrapperClassName="root-icon-container" />
+				<span>Back to Home</span>
+			</Link>
       <div className="cta-wrapper">
         <PageBreak />
         <CTA />

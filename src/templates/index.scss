@@ -69,6 +69,31 @@
     }
   }
 
+	.home-link, .home-link:visited {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		margin-top: 48px;
+		cursor: pointer;
+		color: blue;
+		font-family: $font-family-mono;
+
+		&:hover {
+			opacity: $hover-opacity;
+		}
+
+		.root-icon-container {
+			margin: 0;
+
+			.root-icon {
+				fill: $black;
+				height: 48px;
+				width: 48px;
+			}
+		}
+	}
+
   .cta-wrapper {
     padding-top: 52px;
   }
