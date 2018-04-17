@@ -2,7 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 
 import DynamicOutlines from '../components/DynamicOutlines';
-import DownArrow from '../components/DownArrow';
+import PageBreak from '../components/PageBreak';
 
 import routes from '../constants/routes';
 
@@ -37,7 +37,7 @@ export default function Index({ data }) {
         <a className="email" href="mailto:anthonycastrio+public@gmail.com">
           anthonycastrio<span className="hide">+public</span>@gmail.com
         </a>
-        <DownArrow />
+        <PageBreak />
       </div>
       <div className="posts">
         { posts }

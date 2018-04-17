@@ -33,7 +33,7 @@ $card-height: 200px;
     }
 
     a.email, a.email:hover, a.email:visited {
-      margin-top: 32px;
+      margin: 32px auto;
       color: $blue;
       font-size: $font-size-h3;
 
@@ -74,23 +74,6 @@ $card-height: 200px;
 
     a.email {
       @include animation('slide-down 800ms');
-    }
-
-    .down-arrow {
-      .arrow {
-        @include keyframes(slide-down-arrow) {
-          0% {
-            transform: translate(-32px, -32px);
-            opacity: 0;
-          }
-          100% {
-            transform: translateY(0px);
-            opacity: 1;
-          }
-        }
-
-        @include animation('slide-down-arrow 400ms');
-      }
     }
   }
 
