@@ -10,8 +10,9 @@ import './index.scss'
 
 const data = [
   {
-    img: 'twitter.svg',
-    url: 'https://twitter.com/AnthonyCastrio'
+    specialClass: 'twitter',
+    img:          'twitter.svg',
+    url:          'https://twitter.com/AnthonyCastrio'
   },
   {
     img: 'linkedin.svg',
@@ -28,7 +29,7 @@ const links = data.map((item, idx) => (
     <a href={ item.url }>
       <ReactSVG
         path={ `${routes.ICON}/${item.img}` }
-        className="item-image" />
+        className={ `item-image ${item.specialClass}` } />
     </a>
   </li>
 ));
