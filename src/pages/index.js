@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "gatsby-link";
 
-import DynamicOutlines from '../components/DynamicOutlines';
-import PageBreak from '../components/PageBreak';
 import About from '../components/About';
+import DynamicOutlines from '../components/DynamicOutlines';
+import Email from '../components/Email';
+import PageBreak from '../components/PageBreak';
 
 import routes from '../constants/routes';
 
@@ -35,9 +36,7 @@ export default function Index({ data }) {
       <div className="front-page-header">
         <h1>Anthony Castrio</h1>
         <h2>Product Management & Engineering</h2>
-        <a className="email" href="mailto:anthonycastrio+public@gmail.com">
-          anthonycastrio<span className="hide">+public</span>@gmail.com
-        </a>
+        <Email />
         <PageBreak />
       </div>
       <div className="posts">

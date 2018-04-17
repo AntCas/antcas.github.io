@@ -1,0 +1,21 @@
+@import '../../common/fonts.scss';
+@import '../../common/colors.scss';
+@import '../../common/breakpoints.scss';
+
+.cta {
+  padding: 24px 0;
+  font-family: $font-family-mono;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    font-size: $font-size-h2;
+  }
+
+  .email {
+    margin: 24px auto 0;
+  }
+}

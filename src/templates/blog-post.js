@@ -1,6 +1,9 @@
 import React from "react";
 import Helmet from "react-helmet";
 
+import PageBreak from '../components/PageBreak';
+import CTA from '../components/CTA';
+
 import './index.scss';
 
 export default function Template({
@@ -8,14 +11,21 @@ export default function Template({
 }) {
   const post = data.markdownRemark; 
   return (
-    <div className="blog-post-container">
-     <Helmet title={`Anthony Castrio - ${post.frontmatter.title}`} />
-      <div className="blog-post">
-        <h1>{post.frontmatter.title}</h1>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+    <div className="template">
+      <div className="blog-post-container">
+       <Helmet title={`Anthony Castrio - ${post.frontmatter.title}`} />
+        <div className="blog-post">
+          <h1>{post.frontmatter.title}</h1>
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </div>
+      </div>
+      <div className="cta-wrapper">
+        <PageBreak />
+        <CTA />
+        <PageBreak />
       </div>
     </div>
   );

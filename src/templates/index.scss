@@ -2,67 +2,74 @@
 @import '../common/colors.scss';
 @import '../common/fonts.scss';
 
-.blog-post-container {
-  max-width: 95%;
-  margin: auto;
+.template {
+  .blog-post-container {
+    max-width: 95%;
+    margin: auto;
+    min-height: 100vh;
 
-  @include breakpoint(xs) {
-    max-width: 65%;
-  }
-
-  @include breakpoint(md) {
-    max-width: 50%;
-  }
-  
-  font-family: $primary-font-family;
-
-  ol, ul {
-    padding-left: 32px;
-  }
-  ol {
-    list-style: 1;
-  }
-  h1, h2, h3 {
-    font-weight: bold;
-    margin-top: 18px;
-  }
-  p, ol, ul {
-    margin-top: 12px;
-  }
-  h1, h2, h3, p, ol, code {
-    line-height: 1.5;
-    color: $black;
-  }
-
-  h1 {
-    font-size: $font-size-h1;
-  }
-  h2 {
-    font-size: $font-size-h2;
-  }
-  h3 {
-    font-size: $font-size-h3;
-  }
-  p, li {
-    font-size: $font-size-p;
-  }
-  code {
-    background: $pale-yellow;
-    padding: 3px 6px;
-    border-radius: 3px;
-    font-family: $font-family-mono;
-    font-weight: bold;
-  }
-  img {
-    max-width: 100%;
-  }
-  blockquote p {
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    img {
-      width: 25%;
-      height: 25%;
+    @include breakpoint(xs) {
+      max-width: 65%;
     }
+
+    @include breakpoint(md) {
+      max-width: 50%;
+    }
+    
+    font-family: $primary-font-family;
+
+    ol, ul {
+      padding-left: 32px;
+    }
+    ol {
+      list-style: 1;
+    }
+    h1, h2, h3 {
+      font-weight: bold;
+      margin-top: 18px;
+    }
+    p, ol, ul {
+      margin-top: 12px;
+    }
+    h1, h2, h3, p, ol, code {
+      line-height: 1.5;
+      color: $black;
+    }
+
+    h1 {
+      font-size: $font-size-h1;
+    }
+    h2 {
+      font-size: $font-size-h2;
+    }
+    h3 {
+      font-size: $font-size-h3;
+    }
+    p, li {
+      font-size: $font-size-p;
+    }
+    code {
+      background: $pale-yellow;
+      padding: 3px 6px;
+      border-radius: 3px;
+      font-family: $font-family-mono;
+      font-weight: bold;
+    }
+    img {
+      max-width: 100%;
+    }
+    blockquote p {
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      img {
+        width: 25%;
+        height: 25%;
+      }
+    }
+  }
+
+  .cta-wrapper {
+    padding-top: 52px;
   }
 }

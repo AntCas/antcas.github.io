@@ -32,27 +32,6 @@ $card-height: 200px;
 
     }
 
-    a.email, a.email:hover, a.email:visited {
-      margin: 32px auto;
-      color: $blue;
-      font-size: $font-size-h3;
-
-      @include breakpoint(xs) {
-        font-size: $font-size-h2;
-      }
-
-      .hide {
-        position: absolute;
-        top: -500px;
-        left: -500px;
-      }
-    }
-
-    a.email:hover {
-      opacity: $hover-opacity; 
-    }
-
-
     @include keyframes(slide-down) {
       0% {
         transform: translateY(-48px);
@@ -72,7 +51,8 @@ $card-height: 200px;
       @include animation('slide-down 1200ms');
     }
 
-    a.email {
+    .email {
+      margin: 32px auto;
       @include animation('slide-down 800ms');
     }
   }
