@@ -11,6 +11,9 @@ import './index.scss';
 
 export default class TemplateWrapper extends React.Component {
   render() {
+    const hostLocation = typeof(window) !== 'undefined' ? window.location.host : 'castrio.me',
+          imagePath    = `http://${hostLocation}/images/preview-image.png`;
+
     return (
       <div>
         <Helmet
@@ -18,6 +21,8 @@ export default class TemplateWrapper extends React.Component {
           meta={[
             { name: "description", content: "Anthony Castrio - Product Manager and Software Engineer" },
             { name: "keywords", content: "software engineering, software, websites, product management, portfolio, product" },
+            { property: "og:image", content: imagePath },
+            { name: "image", content: imagePath },
           ]}
         />
         <Header />
