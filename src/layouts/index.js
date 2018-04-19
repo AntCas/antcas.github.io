@@ -7,7 +7,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 import './reset.css';
-import './index.scss'
+import './index.scss';
 
 export default class TemplateWrapper extends React.Component {
   render() {
@@ -17,7 +17,7 @@ export default class TemplateWrapper extends React.Component {
           title="Anthony Castrio's Website"
           meta={[
             { name: "description", content: "Anthony Castrio - Product Manager and Software Engineer" },
-            { name: "keywords", content: "software engineering, software, websites, product management, portfolio, product" }
+            { name: "keywords", content: "software engineering, software, websites, product management, portfolio, product" },
           ]}
         />
         <Header />
