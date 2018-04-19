@@ -21,8 +21,11 @@ export default class TemplateWrapper extends React.Component {
           meta={[
             { name: "description", content: "Anthony Castrio - Product Manager and Software Engineer" },
             { name: "keywords", content: "software engineering, software, websites, product management, portfolio, product" },
-            { property: "og:image", content: imagePath },
             { name: "image", content: imagePath },
+            { property: "og:title", content: "Anthony Castrio" },
+            { property: "og:description", content: "Product Management and Software Engineering" },
+            { property: "og:url", content: "https://castrio.me" },
+            { property: "og:image", content: imagePath },
           ]}
         />
         <Header />
