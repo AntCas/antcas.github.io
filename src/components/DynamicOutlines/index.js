@@ -31,11 +31,15 @@ export default class DynamicOutlines extends Component {
 	componentDidMount() {
 		const { itemId } = this.props;
 		if (itemId) {
-			const clientHeight = document.getElementById(this.props.itemId).clientHeight;
-			const clientWidth = document.getElementById(this.props.itemId).clientWidth;
-			this.setState({ clientHeight, clientWidth });
+			try {
+				const clientHeight = document.getElementById(this.props.itemId).clientHeight;
+				const clientWidth = document.getElementById(this.props.itemId).clientWidth;
+				this.setState({ clientHeight, clientWidth });
+			} catch (err) {
+				console.log(`ERROR: parent component must have id = ${itemId}`);
+			}
 		} else {
-			console.log("must provide itemId in props");
+			console.log("ERROR: must provide itemId in props");
 		}
   }
 
