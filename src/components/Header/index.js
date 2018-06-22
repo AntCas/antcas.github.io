@@ -2,8 +2,6 @@ import React from 'react'
 import Link from 'gatsby-link'
 import ReactSVG from 'react-svg'
 
-import DynamicOutlines from '../DynamicOutlines';
-
 import routes from '../../constants/routes'
 
 import './index.scss'
