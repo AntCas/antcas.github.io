@@ -1,5 +1,18 @@
 import React, { Component } from 'react'
 
+/*
+Parent component must have position relative and the same id as itemId.
+
+Required Props:
+itemId  // id of parent
+
+OptionalProps:
+borderColor    // color of the lines
+borderGap      // gap between the border and the component
+borderWidth    // width of the border lines
+transitionTime // how long it takes lines to grow
+*/
+
 export default class DynamicOutlines extends Component {
 	constructor(props) {
 		super(props);
