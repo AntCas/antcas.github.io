@@ -25,7 +25,12 @@ export default function Index({ data }) {
                 style={{ background: post.frontmatter.color }}>
                 <img className="preview-image"
                   src={ `${routes.LOGO}/${post.frontmatter.image}` } />
-                <DynamicOutlines borderColor={ color } />
+                <DynamicOutlines
+                  itemId={ postId }
+                  borderColor={ color }
+                  borderGap={ 6 }
+                  borderWidth={ 4 }
+                  transitionTime="150ms" />
               </div>
             </Link>
           );
