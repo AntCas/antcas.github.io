@@ -106,3 +106,12 @@ export default class DynamicOutlines extends Component {
     );
   }
 }
+
+
+DynamicOutlines.defaultProps = {
+	borderColor: "black",
+	borderGap: 6,
+	borderWidth: 4,
+	transitionTime: "150ms"
+};
+
