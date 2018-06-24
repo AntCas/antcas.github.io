@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
+import DynamicOutlines from 'dynamic-outlines';
 
 import About from '../components/About';
-import DynamicOutlines from '../components/DynamicOutlines';
 import Email from '../components/Email';
 import PageBreak from '../components/PageBreak';
 
@@ -26,7 +26,7 @@ export default function Index({ data }) {
                 <img className="preview-image"
                   src={ `${routes.LOGO}/${post.frontmatter.image}` } />
                 <DynamicOutlines
-                  itemId={ postId }
+                  parentId={ postId }
                   borderColor={ color }
                   borderGap={ 6 }
                   borderWidth={ 4 }
