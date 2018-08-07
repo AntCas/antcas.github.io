@@ -4,7 +4,7 @@ date: "2018"
 title: "Formico"
 image: "formico.png"
 color: "#252444"
-topics: "engineering, software, product management"
+topics: ["engineering, software, product management"]
 tech: ["JavaScript", "React", "Postgres", "Node.js", "AWS", "Machine Learning"]
 ---
 

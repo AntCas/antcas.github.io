@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Anthony Castrio <anthonycastrio@gmail.com>",
   "dependencies": {
-    "dynamic-outlines": "^1.0.3",
+    "dynamic-outlines": "^1.0.7",
     "gatsby": "^1.9.241",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-catch-links": "^1.0.19",
