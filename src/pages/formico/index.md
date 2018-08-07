@@ -12,7 +12,8 @@ tech: ["JavaScript", "React", "Postgres", "Node.js", "AWS", "Machine Learning"]
 
 Formico is a Software Development Agency.
 
-We take on Full-Stack web development and Machine Learning projects.
+We focus on full-stack web development and machine learning projects.
+
 
 ## Our Web Development Stack
 * `Node.js`
