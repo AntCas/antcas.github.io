@@ -8,15 +8,6 @@ topics: ["engineering", "product", "events"]
 tech: ["JavaScript", "React", "Postgres", "Node.js", "Python", "SQL"]
 ---
 
-## [FEIE-Tester](http://www.feie-test.com/)
-
-This website helps digital nomads save money on their taxes.
-
-[Read the blog post.](https://medium.com/@anthonycastrio/how-to-pay-no-united-states-income-tax-while-traveling-the-world-2e6aaac69299)
-
-###Software Used:
-* `React.js` to build the webpage
-
 ## [Amazon Sellers LA](https://www.meetup.com/Amazon-Seller-Meetup-Los-Angeles/)
 
 I remotely organized a monthly meetup in Los Angeles, CA with over 250 members.

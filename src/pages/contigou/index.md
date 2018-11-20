@@ -10,7 +10,7 @@ tech: ["JavaScript", "React", "Node.js", "SQL", "Python"]
 
 [https://contigou.com/](https://contigou.com/)
 
-![alt text](/images/contigou/homepage.png "ContigoU Homepage")
+![Homepage Screenshot](/images/contigou/homepage.png "ContigoU Homepage")
 
 ContigoU helps patients find skilled nursing rehab.
 
@@ -22,7 +22,7 @@ Skilled Nursing Rehab is where you go after a stroke, car accident, or other deb
 
 Finding one of these facilities on your own is very difficult. Hospitals don’t give much help and information online is scattered. ContigoU solves these issues by providing a hotel-style search for skilled nursing rehab.
 
-![alt text](/images/contigou/comparisons.png "ContigoU Comparisons Page")
+![Comparisons Page Screenshot](/images/contigou/comparisons.png "ContigoU Comparisons Page")
 
 ##Product
 
@@ -40,7 +40,7 @@ I travelled with the founder up and down the Bay Area and interviewed dozens of 
 
 A listings website would sit right at the crux of these problems and help solve all three simultaneously.
 
-![alt text](/images/contigou/listings.png "ContigoU Listings Page")
+![Listings Page Screenshot](/images/contigou/listings.png "ContigoU Listings Page")
 
 ###Product Spec
 I created a detailed product specification based on the requirements we identified, including mockups, examples of products with a similar UX in other verticals and a mood board. Using this document I coordinated with another freelancer to get the product designed and branded. After several iterations we arrived at a great looking MVP.

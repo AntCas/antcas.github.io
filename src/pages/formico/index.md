@@ -10,6 +10,8 @@ tech: ["JavaScript", "React", "Postgres", "Node.js", "AWS", "Machine Learning"]
 
 [https://formico.io](https://formico.io)
 
+![Formico Landing Page Screenshot](/images/formico/homepage.png "Formico Website")
+
 Formico is a Software Development Agency.
 
 We focus on full-stack web development and machine learning projects.
