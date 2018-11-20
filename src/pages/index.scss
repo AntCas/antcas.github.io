@@ -57,6 +57,12 @@ $card-height: 200px;
     }
   }
 
+	h2 {
+		margin-top: 36px;
+		font-size: $font-size-h1;
+		font-family: $primary-font-family;
+	}
+
   .posts {
     display: inline-flex;
     flex-direction: row;

@@ -47,12 +47,11 @@ export default function Index({ data }) {
           <h1>Anthony Castrio</h1>
           <h2>Product Management & Engineering</h2>
           <Email />
-          <PageBreak />
         </div>
+        <h2>Projects</h2>
         <div className="posts">
           { posts }
         </div>
-        <PageBreak />
         <About />
         <PageBreak />
       </div>
