@@ -1,5 +1,5 @@
 ---
-path: "/project/loom"
+path: "/projects/loom"
 date: "2017"
 title: "Loom"
 image: "loom.png"

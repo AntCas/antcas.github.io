@@ -1,5 +1,5 @@
 ---
-path: "/project/contigou"
+path: "/projects/contigou"
 date: "2018"
 title: "ContigoU"
 image: "contigou.svg"

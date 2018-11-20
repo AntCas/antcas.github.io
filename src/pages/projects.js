@@ -6,14 +6,13 @@ import { graphql } from 'gatsby';
 import Layout from '../layouts';
 
 import About from '../components/About';
-import Email from '../components/Email';
 import PageBreak from '../components/PageBreak';
 
 import routes from '../constants/routes';
 
 import './index.scss';
 
-export default function Index({ data }) {
+export default function Projects({ data }) {
   const { edges } = data.allMarkdownRemark;
 
   const posts = edges.filter(post => post.node.frontmatter.title.length > 0
@@ -44,11 +43,6 @@ export default function Index({ data }) {
   return (
     <Layout>
       <div className="index-page">
-        <div className="front-page-header">
-          <h1>Anthony Castrio</h1>
-          <h2>Product Management & Engineering</h2>
-          <Email />
-        </div>
         <h2>Projects</h2>
         <div className="posts">
           { posts }
@@ -61,7 +55,7 @@ export default function Index({ data }) {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query ProjectsQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {

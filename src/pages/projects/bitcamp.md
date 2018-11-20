@@ -1,5 +1,5 @@
 ---
-path: "/project/bitcamp"
+path: "/projects/bitcamp"
 date: "2016"
 title: "Bitcamp"
 image: "bitcamp.png"

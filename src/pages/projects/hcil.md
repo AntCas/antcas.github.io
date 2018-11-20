@@ -1,5 +1,5 @@
 ---
-path: "/project/hcil"
+path: "/projects/hcil"
 date: "2017"
 title: "HCIL - Project Thermo"
 image: "hcil.png"

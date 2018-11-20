@@ -1,5 +1,5 @@
 ---
-path: "/project/feie-test"
+path: "/projects/feie-test"
 date: "2017"
 title: "FEIE-Test"
 image: "feie-test.svg"

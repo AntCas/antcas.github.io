@@ -1,5 +1,5 @@
 ---
-path: "/project/side-projects"
+path: "/projects/side-projects"
 date: "2017"
 title: "Side Projects"
 image: "projects.svg"
