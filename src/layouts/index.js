@@ -31,7 +31,7 @@ export default class TemplateWrapper extends React.Component {
         <Header />
         <div className="layout">
           <div className="matches">
-            <div>{ this.props.children() }</div>
+            <div>{ this.props.children }</div>
           </div>
         </div>
         <Footer />

@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "gatsby-link";
 import DynamicOutlines from 'dynamic-outlines';
+import { graphql } from 'gatsby';
+
+import Layout from '../layouts';
 
 import About from '../components/About';
 import Email from '../components/Email';
@@ -15,15 +18,16 @@ export default function Index({ data }) {
 
   const posts = edges.filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }, idx) => {
-          const { color, shadow } = post.frontmatter; 
+          const { color } = post.frontmatter; 
           const postId = `blog-post-preview-${idx}`;
-
+  
           return (
             <Link to={post.frontmatter.path} key={idx}>
               <div className="blog-post-preview"
                 id={ postId }
                 style={{ background: post.frontmatter.color }}>
                 <img className="preview-image"
+                  alt={ `${post.frontmatter.title}` }
                   src={ `${routes.LOGO}/${post.frontmatter.image}` } />
                 <DynamicOutlines
                   parentId={ postId }
@@ -37,20 +41,22 @@ export default function Index({ data }) {
         });
 
   return (
-    <div className="index-page">
-      <div className="front-page-header">
-        <h1>Anthony Castrio</h1>
-        <h2>Product Management & Engineering</h2>
-        <Email />
+    <Layout>
+      <div className="index-page">
+        <div className="front-page-header">
+          <h1>Anthony Castrio</h1>
+          <h2>Product Management & Engineering</h2>
+          <Email />
+          <PageBreak />
+        </div>
+        <div className="posts">
+          { posts }
+        </div>
+        <PageBreak />
+        <About />
         <PageBreak />
       </div>
-      <div className="posts">
-        { posts }
-      </div>
-      <PageBreak />
-      <About />
-      <PageBreak />
-    </div>
+    </Layout>
   );
 }
 
