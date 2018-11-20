@@ -16,7 +16,8 @@ import './index.scss';
 export default function Index({ data }) {
   const { edges } = data.allMarkdownRemark;
 
-  const posts = edges.filter(post => post.node.frontmatter.title.length > 0)
+  const posts = edges.filter(post => post.node.frontmatter.title.length > 0
+                                      && post.node.frontmatter.path.includes('/project/'))
         .map(({ node: post }, idx) => {
           const { color } = post.frontmatter; 
           const postId = `blog-post-preview-${idx}`;

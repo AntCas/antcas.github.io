@@ -1,5 +1,5 @@
 ---
-path: "/formico"
+path: "/project/formico"
 date: "2018"
 title: "Formico"
 image: "formico.png"

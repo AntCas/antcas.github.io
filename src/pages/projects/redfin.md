@@ -1,5 +1,5 @@
 ---
-path: "/redfin"
+path: "/project/redfin"
 date: "2016"
 title: "Redfin"
 image: "redfin.png"
