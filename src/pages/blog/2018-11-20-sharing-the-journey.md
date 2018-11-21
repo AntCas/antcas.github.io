@@ -8,15 +8,29 @@ image: "workstation.jpg"
 topics: ["project", "engineering", "marketing"]
 ---
 
+...
+
+This is an experiment.
+
+I've decided to start publishing all of the private notes I write myself in the process of planning projects out and deciding what I want to do with my life.
+
+I write around 1,500 words per day. That's about the length of a short blog post, but those notes stay on my computer where no one can see them.
+
+This is the first of what is going to be a series of stream-of-thought style posts. They will not be polished. There will be grammar mistakes. Let's see how it goes.
+
+...
+
+# Working in Public
+
 I think I should share my process. The project I'm working on now is a very mission-driven, and I think that people would be interested in helping if I can get the word out.
 
 If people become invested in the process and see that they are making real contributions to the mission, they are going to feel a sense of ownership over the project that will make them want to support the project and help it grow.
 
-I think through all my ideas just like this. I write everything down in a stream of consciousness way as explore the problem from different angle. This leads to the creation a huge amount that I put in a folder and forget about, what I now think could be treated as pseudo blog posts.
+I think through most ideas just like this. I write everything down in a stream of consciousness way as I explore the problem from different angles. This leads to the creation a huge amount that I put in a folder and forget about, what I now think could be treated as pseudo blog posts.
 
 ## The Benefits
 
-1. It would force me to think in a clear and critical way. With people watching over my shoulder I get the immediate benefit of social feedback and critique. I can learn to defend and refine my ideas in real time. Just ignore the pure haters.
+1. It would force me to think in a clear and critical way. With people watching over my shoulder I get the immediate benefit of social feedback and critique. I can learn to defend and refine my ideas in real time.
 2. Free marketing. 
 3. I'll have documentation of the process that I can look back to later. It will be much easier to see a timeline of what I thought about, what I built, and when.
 4. I need expertise that I do not have. I need people to come on board who are experts in all kinds of things it would take me a lifetime to become an expert in. Those people can't join if they don't know this project exists.
@@ -38,7 +52,7 @@ I think through all my ideas just like this. I write everything down in a stream
 
 ## Social Pressure
 
-My side hope is that sharing these things with the world will put social pressure on me to follow through, to work on this project every day, and to get it launched and out there as soon as possible.
+My other hope is that sharing these things with the world will put social pressure on me to follow through, to work on this project every day, and to get it launched and out there as soon as possible.
 
 ## Crowd-Sourced Solutions
 
@@ -67,4 +81,4 @@ I wish it wasn't so hard to stay focused.
 
 Okay, one way you can hedge against this outcome is by making this process documentation not about just this project, but more your life process in general. Zooming out a bit, increasing the scope, makes the whole thing stronger. You're never not going to be re-evaluating your life, making plans, working on *something.*
 
-Should I publish my backlog too?
+Should I publish my backlog?
