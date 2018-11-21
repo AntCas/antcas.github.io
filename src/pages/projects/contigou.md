@@ -4,6 +4,7 @@ date: "2018"
 title: "ContigoU"
 image: "contigou.svg"
 color: "#8ccfff"
+location: "Oakland, CA"
 topics: ["healthcare", "engineering", "product"]
 tech: ["JavaScript", "React", "Node.js", "SQL", "Python"]
 ---

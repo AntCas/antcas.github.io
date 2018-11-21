@@ -18,6 +18,46 @@
     
     font-family: $primary-font-family;
 
+		.blog-title-card {
+			position: relative;
+			width: 100%;
+			border-radius: 4px;
+
+			.shade, .blog-title {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				top: 0;
+			}
+
+			.shade {
+				height: 98%;
+			}
+
+			.shade {
+				opacity: .45;
+			}
+
+			.blog-title {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				h1 {
+					font-family: $primary-font-family;
+					font-weight: bold;
+					color: white;
+					opacity: 1;
+					font-size: 24px;
+
+					@include breakpoint(sm) {
+						font-size: 56px;
+					}
+				}
+			}
+
+		}
+
     ol, ul {
       padding-left: 32px;
     }

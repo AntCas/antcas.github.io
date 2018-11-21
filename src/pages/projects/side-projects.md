@@ -4,6 +4,7 @@ date: "2017"
 title: "Side Projects"
 image: "projects.svg"
 color: "#2f3154"
+location: "United States"
 topics: ["engineering", "product", "events"]
 tech: ["JavaScript", "React", "Postgres", "Node.js", "Python", "SQL"]
 ---

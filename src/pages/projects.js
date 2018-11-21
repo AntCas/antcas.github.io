@@ -26,7 +26,7 @@ export default function Projects({ data }) {
               <div className="blog-post-preview"
                 id={ postId }
                 style={{ background: post.frontmatter.color }}>
-                <img className="preview-image"
+                <img className="project-logo"
                   alt={ `${post.frontmatter.title}` }
                   src={ `${routes.LOGO}/${post.frontmatter.image}` } />
                 <DynamicOutlines

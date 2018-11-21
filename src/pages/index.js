@@ -16,30 +16,49 @@ import './index.scss';
 export default function Index({ data }) {
   const { edges } = data.allMarkdownRemark;
 
-  const posts = edges.filter(post => post.node.frontmatter.title.length > 0
-                                      && post.node.frontmatter.path.includes('/projects/'))
-        .map(({ node: post }, idx) => {
-          const { color } = post.frontmatter; 
-          const postId = `blog-post-preview-${idx}`;
-  
-          return (
-            <Link to={post.frontmatter.path} key={idx}>
-              <div className="blog-post-preview"
-                id={ postId }
-                style={{ background: post.frontmatter.color }}>
-                <img className="preview-image"
-                  alt={ `${post.frontmatter.title}` }
-                  src={ `${routes.LOGO}/${post.frontmatter.image}` } />
-                <DynamicOutlines
-                  parentId={ postId }
-                  borderColor={ color }
-                  borderGap={ 6 }
-                  borderWidth={ 4 }
-                  transitionTime="150ms" />
+  const createCard = (post, isProject, idx) => {
+    const { color } = post.frontmatter; 
+    const postId = `blog-post-preview-${idx}`;
+
+    return (
+      <Link to={post.frontmatter.path} key={idx}>
+        <div className="blog-post-preview"
+          id={ postId }
+          style={{ background: post.frontmatter.color }}>
+          <img className={ `${isProject ? "project-logo" : "blog-image"}` }
+            alt={ `${post.frontmatter.title}` }
+            src={ `${isProject ? routes.LOGO : routes.BLOG_IMAGE }/${post.frontmatter.image}` } />
+          { isProject ? '' :
+              <div>
+                <div className="shade" style={{ background: post.frontmatter.color }} />
+                <div className="blog-title">
+                  <h3>{ `${post.frontmatter.title}` }</h3>
+                </div>
               </div>
-            </Link>
-          );
-        });
+          }
+          <DynamicOutlines
+            parentId={ postId }
+            borderColor={ color }
+            borderGap={ 6 }
+            borderWidth={ 4 }
+            transitionTime="150ms" />
+        </div>
+      </Link>
+    );
+  };
+
+  const cardTypeFilter = (post, pathString) => {
+    const { title, path } = post.node.frontmatter;
+    return (
+      title.length > 0 && path.includes(pathString)
+    );
+  };
+
+  const projectPosts = edges.filter(post => cardTypeFilter(post, '/projects/'))
+                            .map( ({ node: post }, idx) => createCard(post, true, idx));
+
+  const blogPosts = edges.filter(post => cardTypeFilter(post, '/blog/'))
+                         .map( ({ node: post }, idx) => createCard(post, false, idx));
 
   return (
     <Layout>
@@ -49,9 +68,13 @@ export default function Index({ data }) {
           <h2>Product Management & Engineering</h2>
           <Email />
         </div>
-        <h2>Projects</h2>
+        <h2>Latest Blog Posts</h2>
         <div className="posts">
-          { posts }
+          { blogPosts }
+        </div>
+        <h2>Projects + Teams</h2>
+        <div className="posts">
+          { projectPosts }
         </div>
         <About />
         <PageBreak />

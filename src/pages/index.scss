@@ -99,7 +99,37 @@ $card-height: 200px;
       max-width: 100%;
     }
 
-   .preview-image {
+		.blog-image {
+			width: 100%;
+			border-radius: 4px;
+		}
+
+		.shade, .blog-title {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+		}
+
+		.shade {
+			opacity: .45;
+		}
+
+		.blog-title {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			h3 {
+				font-family: $primary-font-family;
+				font-weight: bold;
+				font-size: 36px;
+				color: white;
+				opacity: 1;
+			}
+		}
+
+   .project-logo {
       max-width: 60%;
       max-height: 90%;
       margin: auto;

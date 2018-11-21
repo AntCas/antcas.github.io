@@ -4,6 +4,7 @@ date: "2016"
 title: "Bitcamp"
 image: "bitcamp.png"
 color: "#1a2e33"
+location: "College Park, Maryland"
 topics: ["hackathon", "event planning", "product"]
 ---
 

@@ -3,6 +3,7 @@ path: "/projects/technica"
 date: "2015"
 title: "Technica"
 image: "technica.gif"
+location: "College Park, MD"
 color: "#111111"
 topics: ["hackathon", "event planning", "product"]
 ---

@@ -4,6 +4,7 @@ date: "2017"
 title: "HCIL - Project Thermo"
 image: "hcil.png"
 color: "#212020"
+location: "College Park, MD"
 topics: ["research", "engineering", "human-computer interaction", "computer vision"]
 tech: ["python", "docker"]
 ---

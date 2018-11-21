@@ -4,6 +4,7 @@ date: "2017"
 title: "FEIE-Test"
 image: "feie-test.svg"
 color: "#2f2f2f"
+location: "San Francisco, CA"
 topics: ["engineering", "product"]
 tech: ["JavaScript", "React", "Node.js"]
 ---

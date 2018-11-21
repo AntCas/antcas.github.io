@@ -4,6 +4,7 @@ date: "2016"
 title: "Luvozo"
 image: "luvozo.png"
 color: "#246478"
+location: "College Park, MD"
 topics: ["healthcare", "engineering", "robotics"]
 tech: ["python", "sqlite", "postgres"]
 ---
