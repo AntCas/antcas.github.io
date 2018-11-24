@@ -95,7 +95,7 @@ https://web.archive.org/web/20140717040901/http:/www.crisishq.com/why-prepare/us
 https://datacore.unepgrid.ch/geonetwork/srv/eng/catalog.search#/home
 
 https://preview.grid.unep.ch/
-* requires all usage to be non-profit, so can’t use it for this project. Seems like a bone-headed move to me. Why would you restrict the use of this data? The ability to positively impact humanity is not limited to non-profit entities.
+* Requires all usage to be non-profit, so can’t use it for this project. Seems like a bone-headed move to me. Why would you restrict the use of this data? The ability to positively impact humanity is not limited to non-profit entities.
 * Hopefully the data sources themselves do not have similar restrictions.
 
 ## UNEP data sources

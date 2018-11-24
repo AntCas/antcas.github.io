@@ -16,7 +16,7 @@ This is the second post of an ongoing experiment: to share private notes publicl
 
 # Project Description
 
-## **Create a “Walk-score” type service for environmental risks:**
+## Create a “Walk-score” type service for environmental risks:
 
 - Natural disasters
 - Toxins
