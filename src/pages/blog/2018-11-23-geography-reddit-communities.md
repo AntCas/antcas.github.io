@@ -11,6 +11,8 @@ topics: ["project", "engineering", "data", "GIS", "datasets", "natural disasters
 
 Here's 30 subreddits about geography, data science, earth science, and maps. The biggest (by far) is /r/dataisbeautiful with over 13.5 million subscribers at the time of writing, while the smallest, /r/datagangsta, has less than 2 thousand. Make sure that you first read and abide by their community guidelines before you post to any of these groups.
 
+You can subscribe to everything at once using the [multi-reddit](https://www.reddit.com/user/non-/m/data_climate_gis/).
+
 | Subreddit                                                                   | Subscribers |
 |-----------------------------------------------------------------------------|-------------|
 | [/r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/)             | 13,502,223  |
