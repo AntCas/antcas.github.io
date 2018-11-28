@@ -11,84 +11,82 @@
     ga('create', 'UA-117407998-1', 'auto', {});
       
       }
-      </script><link as="script" rel="preload" href="/component---src-templates-blog-post-js-ac326ee7cdb433698841.js"/><link as="script" rel="preload" href="/0-04dd8583a06680b702f2.js"/><link as="script" rel="preload" href="/app-ede6879be3f93d7a66dd.js"/><link as="script" rel="preload" href="/webpack-runtime-7b52011dcc48035f8795.js"/><link rel="preload" href="/static/d/131/path---blog-2018-11-27-swarm-evolution-a-59-988-iRtIUoHLKwyNM6fwKFTIqVEgzI.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div><div class="header"><div class="header-subcontainer"><div class="root-icon-container"><a href="/"><div></div></a></div><ul class="links"><li class="item-link"><a href="https://twitter.com/AnthonyCastrio"><div></div></a></li><li class="item-link"><a href="https://www.linkedin.com/in/antcas/"><div></div></a></li><li class="item-link"><a href="https://github.com/AntCas"><div></div></a></li></ul></div></div><div class="layout"><div class="matches"><div><div class="template"><div class="blog-post-container"><div class="blog-post"><h3>November 27, 2018 • Medellín, Colombia</h3><div class="blog-title-card"><img alt="Swarm Evolution" src="/images/blog//swarmvolution/swarm-evolution.png"/><div class="shade" style="background:#000"></div><div class="blog-title"><h1>Swarm Evolution</h1></div></div><div class="blog-post-content"><h1>Emergent Swarm-Like Behaviour</h1>
-<p>This weekend I worked on a project.</p>
-<p>I wanted to find out what conditions give rise to emergent swarm-like behaviors in a population.</p>
-<p>I’m trying to answer this problem by running an evolution simulation.</p>
-<p>I have an environment with two types of creature.</p>
+      </script><link as="script" rel="preload" href="/component---src-templates-blog-post-js-27695f9f2c58867e7c34.js"/><link as="script" rel="preload" href="/0-cfa6c8b448f13b03a11a.js"/><link as="script" rel="preload" href="/app-ede6879be3f93d7a66dd.js"/><link as="script" rel="preload" href="/webpack-runtime-4fa84c0aa71875b099de.js"/><link rel="preload" href="/static/d/964/path---blog-2018-11-28-swarm-evolution-bfb-e6b-f363lDTSMRGUajjJY45rXIGoFu8.json" as="fetch" crossOrigin="use-credentials"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div><div class="header"><div class="header-subcontainer"><div class="root-icon-container"><a href="/"><div></div></a></div><ul class="links"><li class="item-link"><a href="https://twitter.com/AnthonyCastrio"><div></div></a></li><li class="item-link"><a href="https://www.linkedin.com/in/antcas/"><div></div></a></li><li class="item-link"><a href="https://github.com/AntCas"><div></div></a></li></ul></div></div><div class="layout"><div class="matches"><div><div class="template"><div class="blog-post-container"><div class="blog-post"><h3>November 28, 2018 • Medellín, Colombia</h3><div class="blog-title-card"><img alt="Swarm Evolution" src="/images/blog//swarmvolution/swarm-evolution.png"/><div class="shade" style="background:#000"></div><div class="blog-title"><h1>Swarm Evolution</h1></div></div><div class="blog-post-content"><h1>Emergent Swarm-Like Behaviour</h1>
+<p>This weekend I had a question.</p>
+<p>What conditions are necessary for swarm-like behavior to evolve?</p>
+<p>To try and find an answer I built a simulation that lets me test conditions in an environment with two types of creature:</p>
 <p>Creature A is populous and small. The longer they live, the more chances they get to breed. We’ll call this our prey creature.</p>
 <p>Creature B has a small population, they are bigger and faster. The more prey they eat, the stronger they are, and the more chances they get to breed. We’ll call this our predator creature.</p>
 <p><img src="/images/blog/swarmvolution/swarm.gif" alt="Two types of creatures swarming around each other." title="Swarming Creatures"></p>
 <h2>Evolution</h2>
-<p>The creatures have a genetic breeding mechanism. They have “genes” that control their behavior and senses that allow them to detect whether they are near an ally or an enemy.</p>
-<p>Creatures don’t innately know whether which is which, at first. They must learn who is who, and how to respond to each, through evolution.</p>
-<p>Prey that get eaten quickly don’t breed as much as prey who survive a long time. Therefore, genes that help prey stay alive should be passed down more often than genes that get prey eaten. Over time, the whole population of prey should consist of individuals who’s ancestors were good at not getting eaten.</p>
+<p>The creatures have a genetic breeding mechanism. They have genes that control their behavior and senses that allow them to detect whether they are near an ally or an enemy.</p>
+<p>Creatures don’t innately know which is which. Not at first. They learn who is who, and how to respond to each, through evolution.</p>
+<p>Prey that get eaten quickly don’t breed as much as prey who survive a long time. So genes that help prey stay alive should be passed down more often than genes that get prey eaten. Over time, the whole population of prey should consist of individuals who’s ancestors were good at not getting eaten.</p>
 <p>It’s a similar story with the Predators. Predators that don’t eat, don’t get to breed as much as Predators that do. Predators who eat the most prey will dominate the breeding pool. Over time, the whole population of predators should consist of individuals who’s ancestors were good at eating prey.</p>
 <h2>Behaviour</h2>
-<p>With these constraints in place, can prey creatures develop cooperative behavior? Would predators learn to pack hunt? Will prey swarm, or simply evade?</p>
-<p>If these factors are not sufficient, then what other factors must be present before swarming or pack-hunting behavior emerges? How complex must their brains be? What evolutionary pressures must exist? How does their physiology affect their behavior?</p>
-<p>Both predator and prey have the same “brain” structure. Their behavioral difference are currently only affected by their dna. The Predators are a bit bigger and faster and can see a bit farther, but there are less than them.</p>
+<p>With these constraints in place, can prey creatures develop cooperative behavior? Would predators learn to pack hunt? Will prey follow each other, or just avoid the predators?</p>
+<p>If these factors are not enough, then what other factors must be present before swarming or pack-hunting behavior emerges? How complex must their brains be? What evolutionary pressures need to exist? How does their physiology affect their behavior?</p>
+<p>Both predator and prey have the same “brain” structure. Their behavioral difference are only affected by their genetic code. The Predators are a bit bigger and faster, and they can see a bit farther, but there are less than them.</p>
 <p>What happens if we change their morphology? e.g. what if prey are big and predators are small? What if we change how far they can see? The directions in which they can see? How well they can see what they’re looking at?</p>
-<p>I hope to find a very simple set of criteria that allow these behaviors to emerge. It may just take a long time.</p>
+<p>I want to find a the simplest set of criteria that allow these behaviors to emerge.</p>
 <h1>What do creatures look like?</h1>
 <p><img src="/images/blog/swarmvolution/Body.svg" alt="Diagram of organism showing how body size and vision range are defined by concentric circles" title="Body Diagram"></p>
 <p>Each creature has a circular body.</p>
-<p>They can sense creatures near to them in four continuous directions, equally spaced around their body.</p>
+<p>They can sense creatures near to them in four directions equally spaced around their body.</p>
 <p>In each direction they can see how close their nearest ally (like organism) is and how close their nearest opponent (different organism) is.</p>
 <p>In each direction of sight they have one neuron for enemy-detection and one neuron for ally-detection.</p>
 <p><img src="/images/blog/swarmvolution/Senses.svg" alt="Diagram showing evenly spaced vision neurons around circular body of organism" title="Senses Diagram"></p>
-<p>Therefore, if there is more than one enemy or ally in a certain direction, they can only sense the nearest.</p>
-<p>They are in a way both “near-sighted” and “round-sighted”. They can see the closest enemy or ally to them in all directions and they have a sense of how far away that creature is within the limits of their vision.</p>
-<p>If there are no creatures within their visual range, then they can’t see anything.</p>
+<p>So if there is more than one enemy or ally in a certain direction, they can only sense the nearest.</p>
+<p>They are both “near-sighted” and “round-sighted”. They can see the closest enemy or ally to them in all directions and they have a sense of how far away that creature is within the limits of their vision.</p>
+<p>They can’t see anything if there are no creatures within their visual range. </p>
 <p>Imagine they are fish in the ocean. Beyond a certain point, all they can see is the darkness of the ocean.</p>
 <h1>How do creatures move?</h1>
 <p><img src="/images/blog/swarmvolution/Move.svg" alt="Diagram showing organism can rotate orientation left or right" title="Movement Diagram"></p>
-<p>Each creature moves at a constant rate of speed.They can not choose to speed up or slow down.</p>
-<p>Unless they choose to turn, they will continue to move in a straight line. The direction of travel is described by their orientation.</p>
+<p>Each creature moves at a constant rate of speed. They can not choose to speed up or slow down.</p>
+<p>Unless they choose to turn, they will continue to move in a straight line. The direction of travel determined by their orientation.</p>
 <p>When they turn, it is at a constant rate of rotation. In other words, no sharp turns, they have a fixed turning radius.</p>
-<p>Each of these attributes is something that may be adjusted. What would happen if we gave creatures control over their turning radius? Their speed?</p>
+<p>Each of these attributes is something that could be changed. What would happen if we gave creatures control over their turning radius? Their speed?</p>
 <h1>How do their brains work?</h1>
 <p>Their brains are a neural network.</p>
-<p>The human brain is made of many interconnected neurons. When one neuron receives an electric charge it may or may not pass that charge on to any of the many neurons it is connected to.</p>
+<p>The human brain is made of many interconnected neurons. When a neuron receives an electric charge it may or may not pass a charge on to any of the many neurons it connects to.</p>
 <p>A neural net operates in the same way. It’s like a very simple model of a biological neural system.</p>
 <h2>Neurons and Perceptrons</h2>
 <p>In the human brain, the base unit is the neuron:</p>
 <p><img src="/images/blog/swarmvolution/neuron.png" alt="Diagram of a human neuron" title="Neuron"></p>
 <p>In the computer neural network, the base unit is the perceptron:</p>
 <p><img src="/images/blog/swarmvolution/perceptron.png" alt="Diagram of a software perceptron" title="Perceptron"></p>
-<p>the perceptron has inputs and outputs, just like a neuron.</p>
-<p>Instead of electricity, the perceptron receives a number from each of the perceptrons connected to its inputs.</p>
-<p>the perceptron has a setting for each input that tells it how much to care about that input. We call these settings “weights”.</p>
-<p>If a perceptron weights one input highly, it cares about that input a lot, and will output a higher number in response.</p>
-<p>The perceptron sense a number to each of its output based on the result of an activation function.</p>
-<p>The activation function receives a number based on the combined weights of the inputs and outputs a new number that is sent to the output neighbors.</p>
+<p>Like a neuron, the perceptron has inputs and outputs. Instead of electricity, the perceptron receives a number from each input.</p>
+<p>The perceptron has a setting for each input that tells it how much to care about that input. We call these settings “weights”.</p>
+<p>If a perceptron weighs an input highly, it cares about that input a lot, and will output a higher number in response.</p>
+<p>The perceptron decides that number based on the result of an activation function. The activation function calculates what number to output based on the combined values and weights of the inputs.</p>
 <h2>Neural Networks</h2>
-<p>We usually organize these perceptrons into “layers”. In the case of our organisms, we have 3 layers.</p>
-<p>At the top is the Input layer. It’s the numbers are sense neurons receive. Since we have 4 directions our organism can see in and 2 perceptrons per direction, our input layer has 8 perceptrons in total.</p>
-<p>At the bottom is our output layer. Our organism can rotate clockwise or counterclockwise. That’s 2 options, so the organism gets two output perceptrons.</p>
-<p>In the middle of the two, we have a “hidden” layer. This layer exists so that the organism can learn more complex behavior. A neural network can have many layers and each layer can have any number of nodes.</p>
-<p>In our case our organism have just one hidden layer and that hidden layer has just 4 nodes. </p>
 <p><img src="/images/blog/swarmvolution/nn.svg" alt="Diagram of a neural network" title="Neural Network"></p>
-<p>A neural network “learns” by adjusting the weights of all the connections among its perceptrons to get a better answer. </p>
-<p>There’s a lot of weighs a computer can figure out the best set of weights.</p>
-<p>For our purposes we are going to use evolution.</p>
+<p>We usually organize perceptrons into “layers”. Our organisms have three layers of perceptrons in their brains.</p>
+<p>At the top is the input layer, which is made from our sense perceptrons. Since we have four directions our organism can see in, and two perceptrons per direction, our input layer has eight perceptrons in total.</p>
+<p>At the bottom is our output layer. Our organism can rotate clockwise or counterclockwise. That’s two options, so the organism gets two output perceptrons.</p>
+<p>In the middle of the two, we have a “hidden” layer. This layer exists so that the organism can learn more complex behavior. A neural network can have many layers and each layer can have any number of nodes.</p>
+<p>In our case our organism have one hidden layer and that hidden layer has four nodes.</p>
+<p><img src="/images/blog/swarmvolution/nn-model.svg" alt="Diagram of a neural network" title="Neural Network"></p>
+<p>A neural network "learns" by adjusting the weights of all the connections among its perceptrons to get a better answer.</p>
+<p>There’s a lot of methods a computer can use to figure out the best set of weights.</p>
+<p>We are going to use evolution.</p>
 <h1>How do the organisms evolve?</h1>
-<p>Each organism has a DNA which defines its behavior. This “DNA” is actually just the set of weights used by the neural network.</p>
-<p>When two organisms breed, their offspring randomly inherits one of their parents weights or “genes” for a particular neural connection.</p>
-<p>There is also a small chance of that neuron randomly mutating to be a different weight. These random changes simulate the random mutations found in nature which can cause new behaviors to emerge at random. </p>
-<p>If the new gene causes a behavior that helps the organism survive, it will be more likely to pass down that gene.</p>
+<p>Each organism has DNA which defines its behavior. This “DNA” is actually the set of weights used by the neural network.</p>
+<p>When two organisms breed, their offspring randomly inherits one or the other of their parents genes for each weight.</p>
+<p>There is also a small chance of that neuron randomly mutating to be a different weight. These random changes simulate the random mutations found in nature. These mutations can cause new behaviors to emerge at random.</p>
+<p>If the new gene causes a behavior that helps the organism survive, it should be more likely to pass down that gene.</p>
 <h2>How do they organisms choose who to breed with?</h2>
 <p>Each organism in our model breeds at least once. If they are fitter than the population as a whole, they will get more chances to breed again.</p>
-<p>The fitter the organism, the more likely it is to breed multiple times.</p>
-<p>We can think of the gene pool as a kind of roulette wheel where fitter organisms take up a larger wedge of the wheel. </p>
-<p>At the end of a round of the simulation, the old generation is replaced with their offspring. </p>
-<p>[ link to shiffman ]</p>
+<p>The fitter the organism, the more likely it is to breed many times.</p>
+<p>We can think of the gene pool as a roulette wheel where fitter organisms take up a larger wedge of the wheel.</p>
+<p>At the end of a round of the simulation, the old generation is replaced with their offspring.</p>
+<p><a href="https://www.youtube.com/watch?v=9zfeTw-uFCw">Learn more about genetic algorithms.</a></p>
 <h1>What are the results so far?</h1>
-<p>The untrained organisms were surprisingly intelligent. Even without training, the structure of their brains makes them move around in a way that looks not unlike real creatures.</p>
-<p>So far I’ve only run the simulation up to 100 generations and with only small tweaks. At times the organisms do follow each other around in what you could describe as a kind of porto-swarm behavior. </p>
-<p>I think it will take 2-10 times longer to see this porto-swarm behavior develop into something more obviously swarm-like.</p>
-<p>From my initial observations, I also suspect that the organism will need better, denser vision in order to develop the behavior we’re looking for. As well as finer control over their turning radius. </p>
+<p>The untrained organisms were surprisingly intelligent. Even without training they move around in a way that looks natural.</p>
+<p>So far I’ve run the simulation up to 100 generations. At times, the organisms follow each other around in a kind of porto-swarm behavior.</p>
+<p>I think it will take two to ten times longer to see this porto-swarm behavior develop into something more obviously swarm-like.</p>
+<p>The organisms may need better vision, and/or finer control over their turning radius, to develop swarming behavior. </p>
 <h1>Next Steps</h1>
-<p>With the way their field of vision works right now, they can’t tell the difference between a creature right in front of them and one 90 degrees away if those creatures are close to the boundaries of their vision. </p>
-<p>If they had more sight neurons, or if all their sight neurons were packed on one side of their body, they would be able to make finer adjustments in their motion.</p>
-<p>My next experiments with this system will tweak their vision and orientation control in this way. I also want to experiment with much larger populations that live longer and breed over more generations.</p></div></div></div><a class="home-link" href="/"><div class="root-icon-container"></div><span>Back to Home</span></a><div class="cta-wrapper"><div class="page-break"><div class="bullet"></div><div class="bullet"></div><div class="bullet"></div></div><div class="cta"><h2>Want to work with me on a project like this? </h2><div class="email"><a href="mailto:anthonycastrio+public@gmail.com">anthonycastrio<span class="hide">+public</span>@gmail.com</a></div></div><div class="page-break"><div class="bullet"></div><div class="bullet"></div><div class="bullet"></div></div></div></div></div></div></div><div class="footer"><div class="copyright">Copyright 2018, Anthony Castrio</div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"blog-2018-11-27-swarm-evolution-a59","path":"/blog/2018-11-27-swarm-evolution"};window.dataPath="131/path---blog-2018-11-27-swarm-evolution-a-59-988-iRtIUoHLKwyNM6fwKFTIqVEgzI";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-ede6879be3f93d7a66dd.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.58eb99be367515580533.css","/component---src-templates-blog-post-js-ac326ee7cdb433698841.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e3891a364b66a06c8abc.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js.44698a91c75e4f86d0bb.css","/component---src-pages-blog-js-a6da019cf0b459002f8f.js"],"component---src-pages-index-js":["/component---src-pages-index-js.68185465ac498eb7e86b.css","/component---src-pages-index-js-6b90330b719b1f1c0d41.js"],"component---src-pages-projects-js":["/component---src-pages-projects-js.44698a91c75e4f86d0bb.css","/component---src-pages-projects-js-a512cfd3ba51db8686eb.js"]};/*]]>*/</script><script src="/webpack-runtime-7b52011dcc48035f8795.js" async=""></script><script src="/app-ede6879be3f93d7a66dd.js" async=""></script><script src="/0-04dd8583a06680b702f2.js" async=""></script><script src="/component---src-templates-blog-post-js-ac326ee7cdb433698841.js" async=""></script></body></html>
+<p>Currently, the organisms can’t tell the difference between a creature right in front of them and one 90 degrees away if those creatures are close to the boundaries of their vision.</p>
+<p>If they had more sight neurons, or if all their sight neurons were packed on one side of their body, they would be able to make finer adjustments to their motion.</p>
+<p>My next experiments with this system will tweak their vision and orientation control in this way. I also want to experiment with much larger populations that live longer and breed over more generations.</p></div></div></div><a class="home-link" href="/"><div class="root-icon-container"></div><span>Back to Home</span></a><div class="cta-wrapper"><div class="page-break"><div class="bullet"></div><div class="bullet"></div><div class="bullet"></div></div><div class="cta"><h2>Want to work with me on a project like this? </h2><div class="email"><a href="mailto:anthonycastrio+public@gmail.com">anthonycastrio<span class="hide">+public</span>@gmail.com</a></div></div><div class="page-break"><div class="bullet"></div><div class="bullet"></div><div class="bullet"></div></div></div></div></div></div></div><div class="footer"><div class="copyright">Copyright 2018, Anthony Castrio</div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"blog-2018-11-28-swarm-evolution-bfb","path":"/blog/2018-11-28-swarm-evolution"};window.dataPath="964/path---blog-2018-11-28-swarm-evolution-bfb-e6b-f363lDTSMRGUajjJY45rXIGoFu8";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-ede6879be3f93d7a66dd.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js.58eb99be367515580533.css","/component---src-templates-blog-post-js-27695f9f2c58867e7c34.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e3891a364b66a06c8abc.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js.44698a91c75e4f86d0bb.css","/component---src-pages-blog-js-4cf443be52ad1c489905.js"],"component---src-pages-index-js":["/component---src-pages-index-js.68185465ac498eb7e86b.css","/component---src-pages-index-js-2c84654c2051ed4d30b6.js"],"component---src-pages-projects-js":["/component---src-pages-projects-js.44698a91c75e4f86d0bb.css","/component---src-pages-projects-js-f26ba89cdfc734f02ad9.js"]};/*]]>*/</script><script src="/webpack-runtime-4fa84c0aa71875b099de.js" async=""></script><script src="/app-ede6879be3f93d7a66dd.js" async=""></script><script src="/0-cfa6c8b448f13b03a11a.js" async=""></script><script src="/component---src-templates-blog-post-js-27695f9f2c58867e7c34.js" async=""></script></body></html>
