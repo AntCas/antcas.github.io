@@ -10,13 +10,11 @@ topics: ["project", "engineering", "evolution", "genetic algorithm", "biology", 
 
 # Emergent Swarm-Like Behaviour
 
-This weekend I worked on a project.
+This weekend I had a question.
 
-I wanted to find out what conditions give rise to emergent swarm-like behaviors in a population.
+What conditions are necessary for swarm-like behavior to evolve?
 
-I’m trying to answer this problem by running an evolution simulation.
-
-I have an environment with two types of creature.
+To try and find an answer I built a simulation that lets me test conditions in an environment with two types of creature:
 
 Creature A is populous and small. The longer they live, the more chances they get to breed. We’ll call this our prey creature.
 
@@ -26,25 +24,25 @@ Creature B has a small population, they are bigger and faster. The more prey the
 
 ## Evolution
 
-The creatures have a genetic breeding mechanism. They have “genes” that control their behavior and senses that allow them to detect whether they are near an ally or an enemy.
+The creatures have a genetic breeding mechanism. They have genes that control their behavior and senses that allow them to detect whether they are near an ally or an enemy.
 
-Creatures don’t innately know whether which is which, at first. They must learn who is who, and how to respond to each, through evolution.
+Creatures don’t innately know which is which. Not at first. They learn who is who, and how to respond to each, through evolution.
 
-Prey that get eaten quickly don’t breed as much as prey who survive a long time. Therefore, genes that help prey stay alive should be passed down more often than genes that get prey eaten. Over time, the whole population of prey should consist of individuals who’s ancestors were good at not getting eaten.
+Prey that get eaten quickly don’t breed as much as prey who survive a long time. So genes that help prey stay alive should be passed down more often than genes that get prey eaten. Over time, the whole population of prey should consist of individuals who’s ancestors were good at not getting eaten.
 
 It’s a similar story with the Predators. Predators that don’t eat, don’t get to breed as much as Predators that do. Predators who eat the most prey will dominate the breeding pool. Over time, the whole population of predators should consist of individuals who’s ancestors were good at eating prey.
 
 ## Behaviour
 
-With these constraints in place, can prey creatures develop cooperative behavior? Would predators learn to pack hunt? Will prey swarm, or simply evade?
+With these constraints in place, can prey creatures develop cooperative behavior? Would predators learn to pack hunt? Will prey follow each other, or just avoid the predators?
 
-If these factors are not sufficient, then what other factors must be present before swarming or pack-hunting behavior emerges? How complex must their brains be? What evolutionary pressures must exist? How does their physiology affect their behavior?
+If these factors are not enough, then what other factors must be present before swarming or pack-hunting behavior emerges? How complex must their brains be? What evolutionary pressures need to exist? How does their physiology affect their behavior?
 
-Both predator and prey have the same “brain” structure. Their behavioral difference are currently only affected by their dna. The Predators are a bit bigger and faster and can see a bit farther, but there are less than them.
+Both predator and prey have the same “brain” structure. Their behavioral difference are only affected by their genetic code. The Predators are a bit bigger and faster, and they can see a bit farther, but there are less than them.
 
 What happens if we change their morphology? e.g. what if prey are big and predators are small? What if we change how far they can see? The directions in which they can see? How well they can see what they’re looking at?
 
-I hope to find a very simple set of criteria that allow these behaviors to emerge. It may just take a long time.
+I want to find a the simplest set of criteria that allow these behaviors to emerge.
 
 # What do creatures look like?
 
@@ -52,7 +50,7 @@ I hope to find a very simple set of criteria that allow these behaviors to emerg
 
 Each creature has a circular body.
 
-They can sense creatures near to them in four continuous directions, equally spaced around their body.
+They can sense creatures near to them in four directions equally spaced around their body.
 
 In each direction they can see how close their nearest ally (like organism) is and how close their nearest opponent (different organism) is.
 
@@ -60,12 +58,11 @@ In each direction of sight they have one neuron for enemy-detection and one neur
 
 ![Diagram showing evenly spaced vision neurons around circular body of organism](/images/blog/swarmvolution/Senses.svg "Senses Diagram")
 
+So if there is more than one enemy or ally in a certain direction, they can only sense the nearest.
 
-Therefore, if there is more than one enemy or ally in a certain direction, they can only sense the nearest.
+They are both “near-sighted” and “round-sighted”. They can see the closest enemy or ally to them in all directions and they have a sense of how far away that creature is within the limits of their vision.
 
-They are in a way both “near-sighted” and “round-sighted”. They can see the closest enemy or ally to them in all directions and they have a sense of how far away that creature is within the limits of their vision.
-
-If there are no creatures within their visual range, then they can’t see anything.
+They can’t see anything if there are no creatures within their visual range. 
 
 Imagine they are fish in the ocean. Beyond a certain point, all they can see is the darkness of the ocean.
 
@@ -73,20 +70,20 @@ Imagine they are fish in the ocean. Beyond a certain point, all they can see is 
 
 ![Diagram showing organism can rotate orientation left or right](/images/blog/swarmvolution/Move.svg "Movement Diagram")
 
-Each creature moves at a constant rate of speed.They can not choose to speed up or slow down.
 
-Unless they choose to turn, they will continue to move in a straight line. The direction of travel is described by their orientation.
+Each creature moves at a constant rate of speed. They can not choose to speed up or slow down.
+
+Unless they choose to turn, they will continue to move in a straight line. The direction of travel determined by their orientation.
 
 When they turn, it is at a constant rate of rotation. In other words, no sharp turns, they have a fixed turning radius.
 
-Each of these attributes is something that may be adjusted. What would happen if we gave creatures control over their turning radius? Their speed?
-
+Each of these attributes is something that could be changed. What would happen if we gave creatures control over their turning radius? Their speed?
 
 # How do their brains work?
 
 Their brains are a neural network.
 
-The human brain is made of many interconnected neurons. When one neuron receives an electric charge it may or may not pass that charge on to any of the many neurons it is connected to.
+The human brain is made of many interconnected neurons. When a neuron receives an electric charge it may or may not pass a charge on to any of the many neurons it connects to.
 
 A neural net operates in the same way. It’s like a very simple model of a biological neural system.
 
@@ -100,84 +97,75 @@ In the computer neural network, the base unit is the perceptron:
 
 ![Diagram of a software perceptron](/images/blog/swarmvolution/perceptron.png "Perceptron")
 
-the perceptron has inputs and outputs, just like a neuron.
+Like a neuron, the perceptron has inputs and outputs. Instead of electricity, the perceptron receives a number from each input.
 
-Instead of electricity, the perceptron receives a number from each of the perceptrons connected to its inputs.
+The perceptron has a setting for each input that tells it how much to care about that input. We call these settings “weights”.
 
-the perceptron has a setting for each input that tells it how much to care about that input. We call these settings “weights”.
+If a perceptron weighs an input highly, it cares about that input a lot, and will output a higher number in response.
 
-If a perceptron weights one input highly, it cares about that input a lot, and will output a higher number in response.
-
-The perceptron sense a number to each of its output based on the result of an activation function.
-
-The activation function receives a number based on the combined weights of the inputs and outputs a new number that is sent to the output neighbors.
+The perceptron decides that number based on the result of an activation function. The activation function calculates what number to output based on the combined values and weights of the inputs.
 
 ## Neural Networks
 
-We usually organize these perceptrons into “layers”. In the case of our organisms, we have 3 layers.
+![Diagram of a neural network](/images/blog/swarmvolution/nn.svg "Neural Network")
 
-At the top is the Input layer. It’s the numbers are sense neurons receive. Since we have 4 directions our organism can see in and 2 perceptrons per direction, our input layer has 8 perceptrons in total.
+We usually organize perceptrons into “layers”. Our organisms have three layers of perceptrons in their brains.
 
-At the bottom is our output layer. Our organism can rotate clockwise or counterclockwise. That’s 2 options, so the organism gets two output perceptrons.
+At the top is the input layer, which is made from our sense perceptrons. Since we have four directions our organism can see in, and two perceptrons per direction, our input layer has eight perceptrons in total.
+
+At the bottom is our output layer. Our organism can rotate clockwise or counterclockwise. That’s two options, so the organism gets two output perceptrons.
 
 In the middle of the two, we have a “hidden” layer. This layer exists so that the organism can learn more complex behavior. A neural network can have many layers and each layer can have any number of nodes.
 
-In our case our organism have just one hidden layer and that hidden layer has just 4 nodes. 
+In our case our organism have one hidden layer and that hidden layer has four nodes.
 
-![Diagram of a neural network](/images/blog/swarmvolution/nn.svg "Neural Network")
+![Diagram of a neural network](/images/blog/swarmvolution/nn-model.svg "Neural Network")
 
-A neural network “learns” by adjusting the weights of all the connections among its perceptrons to get a better answer. 
+A neural network "learns" by adjusting the weights of all the connections among its perceptrons to get a better answer.
 
-There’s a lot of weighs a computer can figure out the best set of weights.
+There’s a lot of methods a computer can use to figure out the best set of weights.
 
-For our purposes we are going to use evolution.
-
+We are going to use evolution.
 
 # How do the organisms evolve?
 
-Each organism has a DNA which defines its behavior. This “DNA” is actually just the set of weights used by the neural network.
+Each organism has DNA which defines its behavior. This “DNA” is actually the set of weights used by the neural network.
 
-When two organisms breed, their offspring randomly inherits one of their parents weights or “genes” for a particular neural connection.
+When two organisms breed, their offspring randomly inherits one or the other of their parents genes for each weight.
 
-There is also a small chance of that neuron randomly mutating to be a different weight. These random changes simulate the random mutations found in nature which can cause new behaviors to emerge at random. 
+There is also a small chance of that neuron randomly mutating to be a different weight. These random changes simulate the random mutations found in nature. These mutations can cause new behaviors to emerge at random.
 
-If the new gene causes a behavior that helps the organism survive, it will be more likely to pass down that gene.
+If the new gene causes a behavior that helps the organism survive, it should be more likely to pass down that gene.
 
 ## How do they organisms choose who to breed with?
 
 Each organism in our model breeds at least once. If they are fitter than the population as a whole, they will get more chances to breed again.
 
-The fitter the organism, the more likely it is to breed multiple times.
+The fitter the organism, the more likely it is to breed many times.
 
-We can think of the gene pool as a kind of roulette wheel where fitter organisms take up a larger wedge of the wheel. 
+We can think of the gene pool as a roulette wheel where fitter organisms take up a larger wedge of the wheel.
 
-At the end of a round of the simulation, the old generation is replaced with their offspring. 
+At the end of a round of the simulation, the old generation is replaced with their offspring.
 
-[ link to shiffman ]
+[Learn more about genetic algorithms.](https://www.youtube.com/watch?v=9zfeTw-uFCw)
 
 
 # What are the results so far?
 
-The untrained organisms were surprisingly intelligent. Even without training, the structure of their brains makes them move around in a way that looks not unlike real creatures.
+The untrained organisms were surprisingly intelligent. Even without training they move around in a way that looks natural.
 
-So far I’ve only run the simulation up to 100 generations and with only small tweaks. At times the organisms do follow each other around in what you could describe as a kind of porto-swarm behavior. 
+So far I’ve run the simulation up to 100 generations. At times, the organisms follow each other around in a kind of porto-swarm behavior.
 
-I think it will take 2-10 times longer to see this porto-swarm behavior develop into something more obviously swarm-like.
+I think it will take two to ten times longer to see this porto-swarm behavior develop into something more obviously swarm-like.
 
-From my initial observations, I also suspect that the organism will need better, denser vision in order to develop the behavior we’re looking for. As well as finer control over their turning radius. 
+The organisms may need better vision, and/or finer control over their turning radius, to develop swarming behavior. 
 
 # Next Steps
 
-With the way their field of vision works right now, they can’t tell the difference between a creature right in front of them and one 90 degrees away if those creatures are close to the boundaries of their vision. 
+Currently, the organisms can’t tell the difference between a creature right in front of them and one 90 degrees away if those creatures are close to the boundaries of their vision.
 
-If they had more sight neurons, or if all their sight neurons were packed on one side of their body, they would be able to make finer adjustments in their motion.
+If they had more sight neurons, or if all their sight neurons were packed on one side of their body, they would be able to make finer adjustments to their motion.
 
 My next experiments with this system will tweak their vision and orientation control in this way. I also want to experiment with much larger populations that live longer and breed over more generations.
-
-
-
-
-
-
 
 
