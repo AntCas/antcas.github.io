@@ -1,6 +1,6 @@
 ---
-path: "/blog/2018-11-27-swarm-evolution"
-date: "2018-11-27"
+path: "/blog/2018-11-28-swarm-evolution"
+date: "2018-11-28"
 title: "Swarm Evolution"
 location: "Medellín, Colombia"
 color: "#000"
