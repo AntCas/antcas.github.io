@@ -8,9 +8,7 @@ image: "/swarmvolution/swarm-evolution.png"
 topics: ["project", "engineering", "evolution", "genetic algorithm", "biology", "neural network", "machine learning"]
 ---
 
-# Emergent Swarm-Like Behaviour
-
-This weekend I had a question.
+# Emergent Swarm-Like Behavior
 
 What conditions are necessary for swarm-like behavior to evolve?
 
@@ -22,6 +20,8 @@ Creature B has a small population, they are bigger and faster. The more prey the
 
 ![Two types of creatures swarming around each other.](/images/blog/swarmvolution/swarm.gif "Swarming Creatures")
 
+[You can check out the (fun weekend project quality) code on GitHub.](https://github.com/AntCas/swarmvolution)
+
 ## Evolution
 
 The creatures have a genetic breeding mechanism. They have genes that control their behavior and senses that allow them to detect whether they are near an ally or an enemy.
@@ -32,7 +32,7 @@ Prey that get eaten quickly don’t breed as much as prey who survive a long tim
 
 It’s a similar story with the Predators. Predators that don’t eat, don’t get to breed as much as Predators that do. Predators who eat the most prey will dominate the breeding pool. Over time, the whole population of predators should consist of individuals who’s ancestors were good at eating prey.
 
-## Behaviour
+## Behavior
 
 With these constraints in place, can prey creatures develop cooperative behavior? Would predators learn to pack hunt? Will prey follow each other, or just avoid the predators?
 
