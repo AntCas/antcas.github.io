@@ -29,9 +29,11 @@ export default function Template({
             }
             { post.frontmatter.path.includes('/projects/') ?
               <h1>{ post.frontmatter.title }</h1> :
-              <div className="blog-title-card">
-                <img alt={ post.frontmatter.title }
-                     src={ `${routes.BLOG_IMAGE}/${post.frontmatter.image}` } />
+              <div className="blog-title-card" style={{ background: post.frontmatter.color }}>
+                {post.frontmatter.image &&
+                  <img alt={ post.frontmatter.title }
+                       src={ `${routes.BLOG_IMAGE}/${post.frontmatter.image}` } />
+                }
                 <div className="shade" style={{ background: post.frontmatter.color }} />
                 <div className="blog-title">
                   <h1>{ post.frontmatter.title }</h1>

@@ -87,7 +87,7 @@ $card-height: 200px;
 
   .blog-post-preview {
     position: relative;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     border-radius: 4px;
     background: pink;

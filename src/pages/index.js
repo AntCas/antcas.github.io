@@ -25,9 +25,11 @@ export default function Index({ data }) {
         <div className="blog-post-preview"
           id={ postId }
           style={{ background: post.frontmatter.color }}>
-          <img className={ `${isProject ? "project-logo" : "blog-image"}` }
-            alt={ `${post.frontmatter.title}` }
-            src={ `${isProject ? routes.LOGO : routes.BLOG_IMAGE }/${post.frontmatter.image}` } />
+          {post.frontmatter.image &&
+            <img className={ `${isProject ? "project-logo" : "blog-image"}` }
+              alt={ `${post.frontmatter.title}` }
+              src={ `${isProject ? routes.LOGO : routes.BLOG_IMAGE }/${post.frontmatter.image}` } />
+          }
           { isProject ? '' :
               <div>
                 <div className="shade" style={{ background: post.frontmatter.color }} />

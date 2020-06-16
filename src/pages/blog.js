@@ -26,9 +26,11 @@ export default function Projects({ data }) {
               <div className="blog-post-preview"
                 id={ postId }
                 style={{ background: post.frontmatter.color }}>
-                <img className="blog-image"
-                  alt={ `${post.frontmatter.title}` }
-                  src={ `${routes.BLOG_IMAGE}/${post.frontmatter.image}` } />
+                {post.frontmatter.image &&
+                  <img className="blog-image"
+                    alt={ `${post.frontmatter.title}` }
+                    src={ `${routes.BLOG_IMAGE}/${post.frontmatter.image}` } />
+                }
                 <div>
                   <div className="shade" style={{ background: post.frontmatter.color }} />
                   <div className="blog-title">
