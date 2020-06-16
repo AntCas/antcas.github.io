@@ -8,11 +8,11 @@ const About = () => (
     <div className="personal-information">
       <div className="info">
         <h4>Occupation:</h4>
-        <p>Freelance Product Manager & Software Engineer</p>
+        <p>Fullstack Dev & Indie Hacker</p>
       </div>
       <div className="info">
         <h4>Location:</h4>
-        <p>San Francisco, CA</p>
+        <p>Argyle, NY</p>
       </div>
       <div className="info">
         <h4>Education:</h4>
@@ -23,8 +23,8 @@ const About = () => (
         <p>Contract or full-time</p>
       </div>
       <div className="info">
-        <h4>Services:</h4>
-        <p>Web Development, Product Management, Software Engineering, Strategy, Event Planning</p>
+        <h4>Things I do:</h4>
+        <p>Web Development, Product Management, Software Engineering, Event Planning</p>
       </div>
     </div>
   </div>
