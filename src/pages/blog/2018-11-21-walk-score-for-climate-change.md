@@ -86,7 +86,7 @@ This is a problem that affects literally every person in the world. Market size 
 
 Dang, that’s still pretty fucking lofty.
 
-Even from initial searches it also seems that the data that’s out there is not easy enough to find or easy enough to consume for the average person. It needs to be at least as easy and nice to use as walkscore is. Right now it’s hard to find and not obvious what I should do about the threats.
+Even from initial searches it also seems that the data that’s out there is not easy enough to find or easy enough to consume for the average person. It needs to be at least as easy and nice to use as [walkscore](https://www.redfin.com/how-walk-score-works) is. Right now it’s hard to find and not obvious what I should do about the threats.
 
 # We’re going to make it:
 
