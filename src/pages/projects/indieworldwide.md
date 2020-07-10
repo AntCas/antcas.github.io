@@ -18,7 +18,7 @@ Indie Worldwide is an online meetup group for hackers, makers, and founders.
 
 We host multiple meetups a month, sometimes inviting guests for live Q&A sessions.
 
-Indie Worldwide currently has over 1000 members across our Facebook, Slack, and Email List.
+Indie Worldwide currently has over 1000 members across Facebook, Slack, and our Email List.
 
 [Facebook](https://www.facebook.com/groups/indie.worldwide/)
 [Website](https://indieworldwide.co/)
