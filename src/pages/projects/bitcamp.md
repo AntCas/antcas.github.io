@@ -5,7 +5,7 @@ title: "Bitcamp"
 image: "bitcamp.png"
 color: "#1a2e33"
 location: "College Park, Maryland"
-topics: ["hackathon", "event planning", "product"]
+topics: ["hackathon", "events", "product"]
 ---
 
 [https://bit.camp/](https://bit.camp/)

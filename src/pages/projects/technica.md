@@ -5,7 +5,7 @@ title: "Technica"
 image: "technica.gif"
 location: "College Park, MD"
 color: "#111111"
-topics: ["hackathon", "event planning", "product"]
+topics: ["hackathon", "events", "product"]
 ---
 
 [http://gotechnica.org/](http://gotechnica.org/)

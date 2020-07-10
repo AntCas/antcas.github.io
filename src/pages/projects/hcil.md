@@ -5,7 +5,7 @@ title: "HCIL - Project Thermo"
 image: "hcil.png"
 color: "#212020"
 location: "College Park, MD"
-topics: ["research", "engineering", "human-computer interaction", "computer vision"]
+topics: ["research", "HCI", "computer vision"]
 tech: ["python", "docker"]
 ---
 https://github.com/AntCas/OpenPanoThermo

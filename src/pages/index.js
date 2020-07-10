@@ -20,32 +20,40 @@ export default function Index({ data }) {
     const { color } = post.frontmatter; 
     const postId = `blog-post-preview-${idx}`;
 
+    const topics = post.frontmatter.topics.map(topic => (
+      `#${topic}`    
+    )).join(' ')
+
     return (
-      <Link to={post.frontmatter.path} key={idx}>
-        <div className="blog-post-preview"
-          id={ postId }
-          style={{ background: post.frontmatter.color }}>
-          {post.frontmatter.image &&
-            <img className={ `${isProject ? "project-logo" : "blog-image"}` }
-              alt={ `${post.frontmatter.title}` }
-              src={ `${isProject ? routes.LOGO : routes.BLOG_IMAGE }/${post.frontmatter.image}` } />
-          }
-          { isProject ? '' :
-              <div>
-                <div className="shade" style={{ background: post.frontmatter.color }} />
-                <div className="blog-title">
-                  <h3>{ `${post.frontmatter.title}` }</h3>
+      <div className="PostWrapper" key={idx}>
+        { isProject && <h3 className="PostTitle">{`${post.frontmatter.title}`}</h3> }
+        <Link to={post.frontmatter.path}>
+          <div className="blog-post-preview"
+            id={ postId }
+            style={{ background: post.frontmatter.color }}>
+            {post.frontmatter.image &&
+              <img className={ `${isProject ? "project-logo" : "blog-image"}` }
+                alt={ `${post.frontmatter.title}` }
+                src={ `${isProject ? routes.LOGO : routes.BLOG_IMAGE }/${post.frontmatter.image}` } />
+            }
+            { isProject ? '' :
+                <div>
+                  <div className="shade" style={{ background: post.frontmatter.color }} />
+                  <div className="blog-title">
+                    <h3>{ `${post.frontmatter.title}` }</h3>
+                  </div>
                 </div>
-              </div>
-          }
-          <DynamicOutlines
-            parentId={ postId }
-            borderColor={ color }
-            borderGap={ 6 }
-            borderWidth={ 4 }
-            transitionTime="150ms" />
-        </div>
-      </Link>
+            }
+            <DynamicOutlines
+              parentId={ postId }
+              borderColor={ color }
+              borderGap={ 6 }
+              borderWidth={ 4 }
+              transitionTime="150ms" />
+          </div>
+        </Link>
+        { isProject && <p className="PostInfo">{`${post.frontmatter.date} - ${topics}`}</p> }
+      </div>
     );
   };
 
@@ -93,10 +101,11 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 250)
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY")
             path
             image
             color
+            topics
           }
         }
       }

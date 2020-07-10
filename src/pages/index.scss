@@ -75,13 +75,34 @@ $card-height: 200px;
     max-width: $card-width * 3 + 25px * 6;
     z-index: 1;
 
-    a {
+    .PostWrapper {
+      font-family: $primary-font-family;
       max-width: 100%;
       margin: 25px auto;
 
-      @include breakpoint(xs) {
-        margin: 25px;
+      .PostTitle {
+        font-size: $font-size-h3;
+        margin-bottom: 12px;
+        text-align: center;
       }
+
+      .PostInfo {
+        color: $grey;
+        margin-top: 12px;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      @include breakpoint(xs) {
+        .PostInfo, .PostTitle {
+          text-align: left;
+        }
+      }
+
+      .blog-title {
+        text-align: center;
+      }
+
     }
   }
 
@@ -94,6 +115,7 @@ $card-height: 200px;
     height: $card-height;
     width: $card-width;
     max-width: 80%;
+    margin: auto;
 
     @include breakpoint(xs) {
       max-width: 100%;
