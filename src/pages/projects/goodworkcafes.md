@@ -11,7 +11,7 @@ tech: ["JavaScript", "React", "CircleCI", "Netlify", "Gatsby"]
 
 [https://goodworkcafes.com/](https://goodworkcafes.com/)
 
-![Homepage Screenshot](/images/contigou/homepage.png "Good Work Cafes Homepage")
+![Homepage Screenshot](/images/goodworkcafes/homepage.png "Good Work Cafes Homepage")
 
 Good Work Cafes started as a Google Sheet. Several friends and I who like working from coffee shops got in the habit of recording each new cafe we visited and rating them by their wifi speed, availability of power outlets, and coffee. Basically factoring in everything you need to sit down and get a few hours of productivity in.
 
@@ -19,7 +19,7 @@ As a fun side project between freelancing gigs, I started working on this websit
 
 The website still uses Google Sheets as a backend and is hosted for free on Netlify. My only costs are the domain, about $12/year. Once a day a CircleCI job runs on GitHub that downloads any new cafes and re-builds the website.
 
-![Map Page Screenshot](/images/contigou/map.png "Good Work Cafes Map View")
+![Map Page Screenshot](/images/goodworkcafes/map.png "Good Work Cafes Map View")
 
 Thus, the website is entirely static, making it cheap to host, and thanks to Gatsby it's super responsive as well.
 
