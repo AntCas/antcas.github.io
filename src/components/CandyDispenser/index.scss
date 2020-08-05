@@ -1,0 +1,32 @@
+.candy-dispenser {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: flex-start;
+	padding: 24px;
+	
+	.dispenser {
+		display: inline-block;
+		align-self: center;
+		margin: 0;
+		cursor: pointer;
+	}
+	
+	.candies {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 0 0 0 12px;
+		min-height: 24px;
+		.candy {
+			margin: 0;
+			padding: 2px;
+			cursor: url('/img/open-mouth.png') 16 16, pointer;
+
+			&:active {
+				cursor: url('/img/closed-mouth.png') 16 16, pointer;
+			}
+		}
+	}
+}
