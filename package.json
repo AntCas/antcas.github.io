@@ -16,7 +16,7 @@
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-remark": "^2.1.12",
     "gh-pages": "^1.1.0",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "npm": "^5.8.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
